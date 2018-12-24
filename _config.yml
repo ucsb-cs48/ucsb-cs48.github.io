@@ -1,0 +1,88 @@
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+remote_theme: pconrad/ucsb-cs-jekyll-theme-try2
+
+url: https://ucsb-cs48.github.io # the base hostname & protocol for your site
+baseurl: /  # the subpath of your site, e.g. "/blog"
+
+course: "CS48"
+
+title: "UCSB CS48"
+github_url: https://github.com/ucsb-cs48/ucsb-cs48.github.io
+
+on_campus: http://proquest.safaribooksonline.com
+off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/
+
+hfj_url: book/programming/java/0596009208
+hfdp_url: book/software-engineering-and-development/patterns/0596007124 
+
+exclude:
+  - 'vendor'
+  - 'setup.sh'
+  - 'jekyll.sh'
+
+timezone: America/Los_Angeles
+
+collections:
+  topics:
+    output: true
+    permalink: /topics/:path/
+    
+  tutorials:
+    output: true
+    permalink: /tutorials/:path/
+
+  textbooks:
+    output: true
+    permalink: /textbooks/:path/
+
+  hfj:
+    output: true
+    permalink: /hfj/:path/
+
+  hfdp:
+    output: true
+    permalink: /hfdp/:path/
+    
+  resources:
+    output: true
+    permalink: /resources/:path/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: pages
+    values:
+      layout: "default"
+
+  - scope:
+      path: ""
+      type: topics
+    values:
+      layout: default
+      
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: tutorial
+      
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: default
+
+include:
+  - _pages
+
+
+  
