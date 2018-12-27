@@ -40,6 +40,9 @@ offering_links:
   - title: Project
     url: /project_list/
     description: "Project"
+  - title: Lab
+    url: /lab_list/
+    description: "Lab Assignments"
   - title: Exam
     url: /exam_list/
     description: "Exams"
