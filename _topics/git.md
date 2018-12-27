@@ -11,14 +11,12 @@ A *git repository* is a collection of files (a directory tree) for a software pr
 
 The commerical company *github* provides web-based software and cloud-based hosting for git repositories.
 * [github.com](https://github.com) is the main site for github services
-* [github.ucsb.edu](https://github.ucsb.edu) is a private instance of *Github Enterprise* for UCSB.
+* [github.ucsb.edu](https://github.ucsb.edu) is a private instance of [*Github Enterprise* for UCSB maintained by ECI](http://eci.ucsb.edu/eci/services/github/)
 
 The article [git: overview](/topics/git_overview/) explains more.  In addition there are several other articles about git/github listed below.
 
 # Quick Tips
 
-TODO: Refactor this into a better place later
-
-Did you know that when browsing files in github.com, you can type a ? and bring up a whole bunch of amazing short cut keys?
-
-For example T is "fuzzy file search".  Have fun exploring all the rest.
+* Short Cut Keys
+   * Did you know that when browsing files in github.com, you can type a ? and bring up a whole bunch of amazing short cut keys?
+   * For example T is "fuzzy file search".  Have fun exploring all the rest.
