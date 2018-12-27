@@ -37,9 +37,9 @@ offering_links:
   - title: Hwk
     url: /hwk_list/
     description: "Homework Assignments"
-  - title: Lab
-    url: /lab_list/
-    description: "Lab Assignments"
+  - title: Project
+    url: /project_list/
+    description: "Project"
   - title: Exam
     url: /exam_list/
     description: "Exams"
