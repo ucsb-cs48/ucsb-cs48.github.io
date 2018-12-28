@@ -80,7 +80,7 @@ defaults:
       path: ""
       type: patterns
     values:
-      layout: default
+      layout: pattern
 
   - scope:
       path: ""

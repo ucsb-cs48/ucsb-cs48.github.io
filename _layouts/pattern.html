@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}    
+  <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+  </head>
+  <body id="page-top">
+    <div class="container">
+    {% include nav.html %}
+    <div id="content"  class="ui-content">
+      <h1>{{ page.title}}</h1>
+      {% if page.desc %}
+      <p class="topic-summary">{{ page.desc }}</p>
+      {% endif %}
+
+      {% if page.image %}
+<p><img src="{{page.image | relative_url}}" alt="{{page.title}} image" ></p>
+      {% endif %}
+
+      {% if page.image %}
+<p><a href="{{page.wikipedia | relative_url}}">{{page.title}} on Wikipedia</a></p>
+      {% endif %}
+      
+      {{ content }}
+
+    </div><!-- content -->
+    {% include footer/custom.html %}
+    {% include footer.html %}
+    </div><!-- container -->
+  </body>
+</html>
