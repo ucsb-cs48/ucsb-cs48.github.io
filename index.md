@@ -13,6 +13,11 @@ in the [Dept. of Computer Science](http://www.cs.ucsb.edu) at
 
 The official catalog [course description](http://www.cs.ucsb.edu/education/courses/cmpsc-48) is:
 
+> ## Computer Science Project <br>
+> *Number*: CMPSC 48 <br>
+> *Level*: Undergraduate <br>
+> *Units*: 4 <br>
+>
 > **Prerequisite**: *Computer Science 32 with a grade of C or better*.
 > Team-based project development. Topics include software engineering
 > and professional development practices, interface design, advanced
