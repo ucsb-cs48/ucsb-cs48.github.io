@@ -6,3 +6,4 @@ desc: "Unified Modeling Language: A graphical language for software design"
 # References
 
 * [Wikipedia article on UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
+* [Tutorials Point Tutorial on UML](https://www.tutorialspoint.com/uml/)
