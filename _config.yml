@@ -9,6 +9,9 @@ baseurl: /  # the subpath of your site, e.g. "/blog"
 
 course: "CS48"
 
+kramdown:
+   parse_block_html: false
+
 title: "UCSB CS48"
 github_url: https://github.com/ucsb-cs48/ucsb-cs48.github.io
 
@@ -29,7 +32,11 @@ collections:
   topics:
     output: true
     permalink: /topics/:path/
-    
+
+  patterns:
+    output: true
+    permalink: /patterns/:path/
+
   tutorials:
     output: true
     permalink: /tutorials/:path/
@@ -68,7 +75,13 @@ defaults:
       type: topics
     values:
       layout: default
-      
+
+  - scope:
+      path: ""
+      type: patterns
+    values:
+      layout: default
+
   - scope:
       path: ""
       type: tutorials

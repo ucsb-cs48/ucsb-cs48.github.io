@@ -3,8 +3,8 @@ title: Topics
 permalink: "/topic_list/"
 ---
 
-## Topics
+# Topics
 
-{%- include topics_list.html -%}
+{% include topics_list.html %}
 
 

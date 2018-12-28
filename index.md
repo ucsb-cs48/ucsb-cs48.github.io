@@ -33,3 +33,9 @@ This site is maintained in this github repo: <{{site.github_url}}>
 </div>
 </div>
 
+{% include collapse-button.html label="Design Patterns" id="patterns" %}
+<div class="collapse" id="patterns">
+<div class="card card-body" markdown="1">
+{% include patterns_list.md %}
+</div>
+</div>
