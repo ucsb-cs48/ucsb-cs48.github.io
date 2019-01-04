@@ -84,7 +84,7 @@ defaults:
       path: ""
       type: standards
     values:
-      layout: default
+      layout: standard
 
   - scope:
       path: ""

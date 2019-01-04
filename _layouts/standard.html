@@ -9,19 +9,14 @@
     <div class="container">
     {% include nav.html %}
     <div id="content"  class="ui-content">
-      <h1>{{ page.title}}</h1>
+     
+      <h1><a href="{{ '/standards_list/' | relative_url }}">CS48 Standards</a></h1>
+      
+      <h2>{{ page.title}}</h2>
       {% if page.desc %}
       <p class="topic-summary">{{ page.desc }}</p>
       {% endif %}
 
-      {% if page.image %}
-<p><img src="{{page.image | relative_url}}" alt="{{page.title}} image" ></p>
-      {% endif %}
-
-      {% if page.wikipedia %}
-<p><a href="{{page.wikipedia | relative_url}}">{{page.title}} on Wikipedia</a></p>
-      {% endif %}
-      
       {{ content }}
 
     </div><!-- content -->
