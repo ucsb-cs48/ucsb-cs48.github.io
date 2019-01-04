@@ -33,6 +33,10 @@ collections:
     output: true
     permalink: /topics/:path/
 
+  standards:
+    output: true
+    permalink: /standards/:path/
+
   patterns:
     output: true
     permalink: /patterns/:path/
@@ -73,6 +77,12 @@ defaults:
   - scope:
       path: ""
       type: topics
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: standards
     values:
       layout: default
 
