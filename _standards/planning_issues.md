@@ -1,6 +1,8 @@
 ---
-topic: "Issues"
+topic: "Planning: Issues"
 desc: "Standards for Issues"
+category_prefix: "Planning: "
+indent: true
 ---
 
 User Stories should:

@@ -3,7 +3,7 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}    
-  <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+  <title>{% if page.topic %} {{ page.topic }} | {% endif %} {{ site.name }}</title>
   </head>
   <body id="page-top">
     <div class="container">
@@ -12,13 +12,20 @@
      
       <h1><a href="{{ '/standards_list/' | relative_url }}">CS48 Standards</a></h1>
       
-      <h2>{{ page.title}}</h2>
+      <h2>{{ page.topic}}</h2>
       {% if page.desc %}
       <p class="topic-summary">{{ page.desc }}</p>
       {% endif %}
 
       {{ content }}
 
+      {%- if page.category_prefix -%}
+        {% if page.category_prefix %}
+          {% include category_index.html %}
+        {% endif %}    
+      {%- endif -%}
+
+      
     </div><!-- content -->
     {% include footer/custom.html %}
     {% include footer.html %}
