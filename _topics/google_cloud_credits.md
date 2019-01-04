@@ -26,11 +26,14 @@ A few examples:
 * Google Compute Engine, "infrastructure as a service"
    * Here, you get essentially "root access on a linux virtual machine"
    * Pro: you can run any code you want, as long as you don't violate terms of service (i.e. no evil stuff)
-   * Cons: more complicated to set up.  You need not only coding skills, but sys admin skills as well (what is sometimes called "devops" by the trendy silicon valley types).
+   * Cons: more complicated to set up.  You need not only coding skills, but sys admin skills as well (what is sometimes 
+      called "devops" by the trendy silicon valley types).
+   * Examples:
+      - [Google Compute Engine: Quickstart Linux](https://cloud.google.com/compute/docs/quickstart-linux)
 * Firebase, a bit of a hybrid between platform and infrastructure
    * Pro: Easy to work with
    * Con: Really targetted very much for mobile app (iOS and Android) development.  
       If you are doing that, fine.  If not, Firebase may be a poor fit.  You may be fighting with the platform more than you'll be benefitting.
-* Google Buckets (cloud storage)
-   * 
+* Google Buckets, Google Cloud Storage
+   * Example: [Getting Started with Google Cloud Storage](https://cloud.google.com/storage/docs/quickstart-console)
    
