@@ -31,6 +31,7 @@ The parts of the user story answer the questions **who**, **what**, and **why**:
     * [A Sample Format for a Spreadsheet-Based Product Backlog](https://www.mountaingoatsoftware.com/blog/a-sample-format-for-a-spreadsheet-based-product-backlog)
     * [Advantages of User Stories for Requirements](https://www.mountaingoatsoftware.com/articles/advantages-of-user-stories-for-requirements)
     * [Non-functional Requirements as User Stories](https://www.mountaingoatsoftware.com/blog/non-functional-requirements-as-user-stories)
+    * [Slicing Down User Stories](https://www.agilelearninglabs.com/2013/04/introduction-user-stories/)
 
 * Informal to Formal user stories: <http://www.agilemodeling.com/artifacts/userStory.htm>
 * Various alternatives for the "As-a foo I can bar so that fum" format: <https://en.wikipedia.org/wiki/User_story#Format>
