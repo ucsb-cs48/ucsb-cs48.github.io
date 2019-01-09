@@ -3,4 +3,4 @@ topic: "Refactoring"
 desc: ""
 ---
 
-TBD
+See Also: [Code Smells]({{ '/topics/code_smells/' | relative_url }})
