@@ -13,4 +13,7 @@ In general, in the context of software development, *refactoring* refers to the 
 * do not change the functionality of the code, but
 * make it easier to understand and maintain: i.e. make it easier to fix bugs and add new features.
 
-
+The "refactor" step in the "Red-Green-Refactor" cycle of [Test-Driven Development]({{ '/topics/tdd/' | relative_url }}) refers
+to this kind of refactoring.  The idea is that once you have tests for your code, and a candidate solution that passes the tests, you are much more free to experiment with refactoring the code because:
+* you'll get immediate feedback on whether your refactoring broke anything or not
+* you at least have a candidate "correct" solution you can fall back on if your refactoring ends up not working out
