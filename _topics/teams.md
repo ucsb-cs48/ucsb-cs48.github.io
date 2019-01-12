@@ -5,17 +5,20 @@ category_prefix: "Teams: "
 ---
 
 <style>
-blockquote { 
+blockquote.lego-movie { 
  white-space: pre; 
  font-style: italic;
 }
 </style>
 
-<blockquote>
-Everything is awesome, everything is cool when your part of a team 
-Everything is awesome, when you're living out a dream 
-Everything is better when we stick together 
-Some have said you and I are gonna win forever? 
+<blockquote class="blockquote lego-movie>
+ Everything is awesome, everything is cool when your part of a team 
+ Everything is awesome, when you're living out a dream 
+ Everything is better when we stick together 
+ Some have said you and I are gonna win forever? 
+ <footer class="blockquote-footer" markdown="1">
+ (from [The Lego Movie](https://www.youtube.com/watch?v=StTqXEQ2l-Y))
+ </footer>
 </blockquote>
 
 (from [The Lego Movie](https://www.youtube.com/watch?v=StTqXEQ2l-Y))
