@@ -54,5 +54,7 @@ values:
 * [Seven Best Practices For Retro Facilitators](https://content.pivotal.io/blog/7-best-practices-for-facilitating-agile-retrospectives) by Jonathan Berger, on the Pivotal Blog.
    * Discusses explaining the retro format, taking verbatim notes, categorizing without introducing bias, making action items actionable, falsifiable, and assigning them to specific individuals, and the importance of confidentiality.
 
-* 
-
+* [How to lead a successful project retrospective](https://blog.lucidmeetings.com/blog/how-to-lead-a-successful-project-retrospective-meeting) from the [Lucid Meetings Blog](https://blog.lucidmeetings.com/)
+   * Key points are: importance of having enough time, setting a positive tone, establishing safety, keeping proposed changes small, how to prepare, how to run the meeting, what questions to ask.
+   
+   
