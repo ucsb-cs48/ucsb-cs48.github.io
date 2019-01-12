@@ -57,4 +57,6 @@ values:
 * [How to lead a successful project retrospective](https://blog.lucidmeetings.com/blog/how-to-lead-a-successful-project-retrospective-meeting) from the [Lucid Meetings Blog](https://blog.lucidmeetings.com/)
    * Key points are: importance of having enough time, setting a positive tone, establishing safety, keeping proposed changes small, how to prepare, how to run the meeting, what questions to ask.
    
+* [How To Run A Sprint Retrospective That Knocks Your Team’s Socks Off](https://thedigitalprojectmanager.com/how-run-sprint-retrospective/) by Alexa Huston on the [TheDigitalProjectManager.com](https://thedigitalprojectmanager.com)
+   * Key points: Dealing with apathy, emotions, lack of conversation.  Some tips: simplicity, novelty, focus, action-oriented, helpfulness of outside facilitation
    
