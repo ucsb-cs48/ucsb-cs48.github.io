@@ -31,3 +31,4 @@ If you want to reference the slides from the videos, they are here:
 
 * <https://help.github.com/articles/configuring-automation-for-project-boards/>
 * <https://help.github.com/articles/about-automation-for-project-boards/>
+* [Kanban Board glossary entry] from 
