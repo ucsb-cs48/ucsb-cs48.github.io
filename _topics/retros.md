@@ -115,3 +115,4 @@ can take this on successfully.  Then go back and revisit the other articles late
    * Good, Bad, Better, Best
    * Darby/Larsen five-step retro.
 
+* [Seven ways to make retros fun and engaging](https://www.solutionsiq.com/learning/blog-post/7-ways-to-make-retrospectives-fun-and-engaging//blog-post/7-ways-to-make-retrospectives-fun-and-engaging/), an article by Madhavi Ledalla  in the [SolutionsIQ Learning Library](https://www.solutionsiq.com/learning/)
