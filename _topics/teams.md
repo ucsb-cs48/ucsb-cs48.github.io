@@ -5,10 +5,11 @@ category_prefix: "Teams: "
 ---
 
 
-> Everything is awesome, everything is cool when your part of a team 
-> Everything is awesome, when you're living out a dream 
-> Everything is better when we stick together 
-> Some have said you and I are gonna win forever?
+> Everything is awesome, everything is cool when your part of a team //
+> Everything is awesome, when you're living out a dream //
+> Everything is better when we stick together //
+> Some have said you and I are gonna win forever? 
+
 (from [The Lego Movie](https://www.youtube.com/watch?v=StTqXEQ2l-Y))
 
 Is is really though?  It depends on how well our team is working.
