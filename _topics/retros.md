@@ -1,7 +1,9 @@
 ---
-topic: "Retrospectives"
-desc: "The heart of agile is inspect and adapt; retros help make sure we do that"
+topic: "Retros: "
+desc: "The heart of agile is inspect and adapt; retrospective meetings ('retros') help make sure we do that"
+category_prefix: "Retros: "
 ---
+
 
 It is good practice---some would say, essential to doing Agile properly---to hold 
 a "retrospective meeting" (or "retro" for short) at the end of each iteration (aka "sprint").
