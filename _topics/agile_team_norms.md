@@ -19,4 +19,4 @@ The norms illustrated in the video, while common, are just examples.
 
 # See Also
 
-* {% link.md href="/topics/teams/" text="Teams" %}
+* {% include link.md href="/topics/teams/" text="Teams" %}
