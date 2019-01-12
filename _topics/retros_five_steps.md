@@ -22,11 +22,18 @@ the following five stage formula, which comes from the book
 * Step 4: Decide What To Do
 * Step 5: Close the Retro
 
+# Exercises
+
 There are a variety of exercises that can be used for each of these steps.  
 
-In fact, the website [Retro-mat](https://retromat.org/en/) contains over 100 activities in English (and six 
-other languages including 中文) that new retro leaders can choose from.  Other guides to leading retros are 
-listed below.
+* The website [Retro-mat](https://retromat.org/en/) contains over 100 activities in English (and six 
+   other languages including 中文) that new retro leaders can choose from.  Other guides to leading retros are 
+   listed below.
+
+* Spotify (yes, that Spotify) has a [Spotify Retro Kit](https://labs.spotify.com/2017/12/15/spotify-retro-kit/) that they've put
+   together to help their teams run successful retros.
+   
+# Choosing Exercises   
 
 The facilitator of the retro has the responsibility for
 choosing practices that they think will be effective for their team, taking into account factors
@@ -35,6 +42,8 @@ such as:
 * the level of familiarity they have with the retro process
 * the setting in which the retro is taking place
 * the particular challenges facing the team
+
+# Big Picture Values
 
 It's helpful to choose practices that are fun and engaging, and to change up the practices so that 
 folks don't get bored with the exercise.  However, even more important is to focus on these big picture 
@@ -49,6 +58,12 @@ values:
    * Instead, consider focusing ONLY on helping the other participants voices be heard.
 
 # Guides for retrospective faciltators
+
+I would not suggest that you read ALL of these articles before running your first retro---that could lead to information
+overload.  
+
+Instead, I suggest skimming through until you find ONE that resonates for you and gives you a sense that you
+can take this on successfully.  Then go back and revisit the other articles later as you get more experience.
 
 * [Lauren Moon's article](https://blog.trello.com/the-5-steps-to-better-team-retrospectives) on how [Philip Rogers](https://twitter.com/g_philip), a Scrum Master at National Public Radio, leads retros.
 * [Seven Best Practices For Retro Facilitators](https://content.pivotal.io/blog/7-best-practices-for-facilitating-agile-retrospectives) by Jonathan Berger, on the Pivotal Blog.
