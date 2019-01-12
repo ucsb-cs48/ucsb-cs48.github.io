@@ -41,3 +41,7 @@ Here's an overview of the ten things.  I recommend reading the article in detail
 9. Involve management (or in a CS48 context, the instructional staff) to support the Kickstart
 10. ‘Bring it to the team’
 
+
+# See also:
+
+* {% include link.md text="Agile: Team Norms" href="/topics/agile_team_norms/" %}
