@@ -31,12 +31,12 @@ product development.    Because of the short length of the 10-week quarter at UC
 
 A "retro template" is a high-level outline for structuring a retro.  Here are some popular templates:
 
-* {% include link.md text='Start/Stop/Continue' href='/topics/retro_start_stop_continue/' %}: the team reflects on
+* {% include link.md text='Start/Stop/Continue' href='/topics/retros_start_stop_continue/' %}: the team reflects on
      * what activites want to stop doing (because they aren't helpful)
      * what activities they want to start doing (because they think it will help)
      * what activities they should continue (because they are working well)
 
-* {% include link.md text='Darby/Larsen 5-Step Retro' href='/topics/retro_darby_larsen/' %}: This retro template,
+* {% include link.md text='Darby/Larsen 5-Step Retro' href='/topics/retros_darby_larsen/' %}: This retro template,
    introducted by 
    [Esther Derby](http://www.estherderby.com/) and 
    [Dianna Larsen](https://www.futureworksconsulting.com/about/diana-larsen)
