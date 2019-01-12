@@ -77,7 +77,9 @@ can take this on successfully.  Then go back and revisit the other articles late
    * Key points: Dealing with apathy, emotions, lack of conversation.  Some tips: simplicity, novelty, focus, action-oriented, helpfulness of outside facilitation
    
 * [Three popular ways to run a productive Retrospective](https://backlog.com/blog/three-ways-run-productive-retrospective/)
+
    By Brandi Gratis on the [Backlog.com Blog](https://backlog.com/blog/)
    Covers the five-step Darby & Larson formula, plus two alternatives:
-      * Start, Stop, Continue
-      * Good, Bad, Better, Best
+   
+   * Start, Stop, Continue
+   * Good, Bad, Better, Best
