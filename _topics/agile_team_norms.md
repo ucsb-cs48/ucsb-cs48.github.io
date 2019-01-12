@@ -16,3 +16,7 @@ The norms illustrated in the video, while common, are just examples.
 * Being a part of the team represents a committment to those norms.   
 * Therefore, the norms should be ones that the team can come to consensus on.    
 * Different teams will have slightly different team norms, based on the context, personality of the team members, level of experience, etc.
+
+# See Also
+
+* {% link.md href="/topics/teams/" text="Teams" %}
