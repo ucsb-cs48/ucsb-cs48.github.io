@@ -13,4 +13,4 @@ category_prefix: "Agile: "
 
 * <https://project-management.com/10-key-principles-of-agile-software-development/>
 
-* [Agile Practices Timeline](https://www.agilealliance.org/agile101/practices-timeline/) (from [agilealliance.org/agile101](https://www.agilealliance.org/agile101)
+* [Agile Practices Timeline](https://www.agilealliance.org/agile101/practices-timeline/) (from [agilealliance.org/agile101](https://www.agilealliance.org/agile101))
