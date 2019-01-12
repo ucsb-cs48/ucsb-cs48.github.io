@@ -25,11 +25,11 @@ Is is really though?  It depends on how well our team is working.
 Many Agile coaches refer to the *Tuckman Stages*, developed by psychologist Bruce Tuckman in 1965
 based on studying how 26 small groups formed into teams:
 
-* Forming: The team isn't really a team yet; they are still getting used to each other.  The team might not yet feel comfortable being openly critical of each other, or expressing irritations or concerns---everyone is still trying to be "nice".
-* Storming: The team is getting comfortable enough to start voicing their concerns.  This is where conflicts might start to become evident.
-* Norming: When conflict is handled skillfully, team norms start to emerge that help balance team and individual needs and preferences.  It really starts to feel like a team.
-* Performing: The teams is really comfortable with one another, and helps each other out.  They are productive and flexible, and fear of failure or looking foolish is diminished.
-* Adjourning: (*not quite a rhyme there*) When the purpose of the team has been accomplished, the team ends.  It is helpful to have some opportunity for closure. (In CS48, this will happen in the final discussion sections of the 10-week quarter.)
+* **Forming**: The team isn't really a team yet; they are still getting used to each other.  The team might not yet feel comfortable being openly critical of each other, or expressing irritations or concerns---everyone is still trying to be "nice".
+* **Storming**: The team is getting comfortable enough to start voicing their concerns.  This is where conflicts might start to become evident.
+* **Norming**: When conflict is handled skillfully, team norms start to emerge that help balance team and individual needs and preferences.  It really starts to feel like a team.
+* **Performing**: The teams is really comfortable with one another, and helps each other out.  They are productive and flexible, and fear of failure or looking foolish is diminished.
+* **Adjourning**: (*not quite a rhyme there*) When the purpose of the team has been accomplished, the team ends.  It is helpful to have some opportunity for closure. (In CS48, this will happen in the final discussion sections of the 10-week quarter.)
 
 It is possible to get stuck in the Storming or Norming stages if conflicts are not resolved skillfully.  It can take a few sprints
  to move from the first three phases into the Performing phase.
