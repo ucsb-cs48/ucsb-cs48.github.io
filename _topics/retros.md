@@ -29,9 +29,22 @@ product development.    Because of the short length of the 10-week quarter at UC
 
 # Retro Templates and Retro Activities
 
-A "retro template" is a high-level outline for structuring a retro.  Here are three popular templates:
-* {% include link.md text='Start/Stop/Continue' href='/topics/agile_start_stop_continue/' %}: the team reflects on
+A "retro template" is a high-level outline for structuring a retro.  Here are some popular templates:
+
+* {% include link.md text='Start/Stop/Continue' href='/topics/retro_start_stop_continue/' %}: the team reflects on
      * what activites want to stop doing (because they aren't helpful)
      * what activities they want to start doing (because they think it will help)
      * what activities they should continue (because they are working well)
-  
+
+* {% include link.md text='Darby/Larsen 5-Step Retro' href='/topics/retro_darby_larsen/' %}: This retro template,
+   introducted by 
+   [Esther Derby](http://www.estherderby.com/) and 
+   [Dianna Larsen](https://www.futureworksconsulting.com/about/diana-larsen)
+   in the book [Agile Retrospectives: Making Good Teams Great](http://www.estherderby.com/books)
+   has five steps:
+   * Step 1: Set the Stage
+   * Step 2: Gather Data
+   * Step 3: Generating Insights
+   * Step 4: Decide What To Do
+   * Step 5: Close the Retro
+   
