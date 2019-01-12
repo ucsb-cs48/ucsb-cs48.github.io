@@ -22,7 +22,13 @@ the following five stage formula, which comes from the book
 * Step 4: Decide What To Do
 * Step 5: Close the Retro
 
-There are a variety of exercises that can be used for each of these steps.  The facilitator of the retro has the responsibility for
+There are a variety of exercises that can be used for each of these steps.  
+
+In fact, the website [Retro-mat](https://retromat.org/en/) contains over 100 activities in English (and six 
+other languages including 中文) that new retro leaders can choose from.  Other guides to leading retros are 
+listed below.
+
+The facilitator of the retro has the responsibility for
 choosing practices that they think will be effective for their team, taking into account factors
 such as:
 * the personalities of the team members
@@ -30,6 +36,19 @@ such as:
 * the setting in which the retro is taking place
 * the particular challenges facing the team
 
+It's helpful to choose practices that are fun and engaging, and to change up the practices so that 
+folks don't get bored with the exercise.  However, even more important is to focus on these big picture 
+values:
+
+* Try to structure activities so that *everyone's* voices are heard
+   * Help folks that are more vocal to keep their sharing short and make space
+   * Help folks that are less vocal to feel comfortable speaking up
+* It is helpful for the facilitator to focus on *facilitating* not *participating*
+   * The facilitator may have their own opinions
+   * While conducting the retro, they may like to set those aside
+   * Instead, consider focusing ONLY on helping the other participants voices be heard.
+
 # Guides for retrospective faciltators
 
+* [Lauren Moon](https://blog.trello.com/the-5-steps-to-better-team-retrospectives)
 
