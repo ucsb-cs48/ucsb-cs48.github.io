@@ -5,6 +5,7 @@ category_prefix: "Retros: "
 indent: true
 ---
 
+
 {% include img.md 
   src='/topics/retros_five_steps/retrospectives_feature2-640x360.jpg' 
   alt='five steps to improve your retros' %}
@@ -75,3 +76,8 @@ can take this on successfully.  Then go back and revisit the other articles late
 * [How To Run A Sprint Retrospective That Knocks Your Team’s Socks Off](https://thedigitalprojectmanager.com/how-run-sprint-retrospective/) by Alexa Huston on the [TheDigitalProjectManager.com](https://thedigitalprojectmanager.com)
    * Key points: Dealing with apathy, emotions, lack of conversation.  Some tips: simplicity, novelty, focus, action-oriented, helpfulness of outside facilitation
    
+* [Three popular ways to run a productive Retrospective](https://backlog.com/blog/three-ways-run-productive-retrospective/)
+   By Brandi Gratis on the [Backlog.com Blog](https://backlog.com/blog/)
+   Covers the five-step Darby & Larson formula, plus two alternatives:
+      * Start, Stop, Continue
+      * Good, Bad, Better, Best
