@@ -8,10 +8,11 @@ category_prefix: "Teams: "
 blockquote.lego-movie { 
  white-space: pre; 
  font-style: italic;
+ background-color: #ffe;
 }
 </style>
 
-<blockquote class="blockquote lego-movie>
+<blockquote class="blockquote lego-movie">
  Everything is awesome, everything is cool when your part of a team 
  Everything is awesome, when you're living out a dream 
  Everything is better when we stick together 
