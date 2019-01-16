@@ -1,0 +1,6 @@
+---
+topic: "Python: OpenCV"
+desc: "Installing OpenCV for Python"
+---
+
+See: <https://solarianprogrammer.com/2016/09/17/install-opencv-3-with-python-3-on-windows/>
