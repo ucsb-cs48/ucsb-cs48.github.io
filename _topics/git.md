@@ -17,7 +17,7 @@ The article [git: overview](/topics/git_overview/) explains more.  In addition t
 
 # Quick Tips
 
-* [Github Cheat Sheet](url-goes-here)
+* [Github Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 * Short Cut Keys
    * Did you know that when browsing files in github.com, you can type a ? and bring up a whole bunch of amazing short cut keys?
