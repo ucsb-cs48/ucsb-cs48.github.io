@@ -48,7 +48,7 @@ A "retro template" is a high-level outline for structuring a retro.  Here are so
    * Step 4: Decide What To Do
    * Step 5: Close the Retro
    
- * This article on [5 fun sprint retro ideas with templates)(https://www.atlassian.com/blog/jira-software/5-fun-sprint-retrospective-ideas-templates) covers Start/Stop/Continue from above, plus four others:
+ * This article on [5 fun sprint retro ideas with templates](https://www.atlassian.com/blog/jira-software/5-fun-sprint-retrospective-ideas-templates) covers Start/Stop/Continue from above, plus four others:
     * Glad/Sad/Mad
     * Sailboat
     * 4 L's: Liked, Learned, Lacked, Longed-For
