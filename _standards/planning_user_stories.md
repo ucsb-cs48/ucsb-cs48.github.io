@@ -1,6 +1,6 @@
 ---
-topic: "Planning: Issues"
-desc: "Standards for Issues"
+topic: "Planning: User Stories and Issues"
+desc: "e.g. the INVEST criteria"
 category_prefix: "Planning: "
 indent: true
 ---
