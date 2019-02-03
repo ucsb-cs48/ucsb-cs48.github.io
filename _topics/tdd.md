@@ -1,5 +1,5 @@
 ---
-topic: "TDD: (Test Driven Developmeent)"
+topic: "TDD: (Test Driven Development)"
 desc: "General information about best practices"
 category_prefix: "TDD: "
 ---
