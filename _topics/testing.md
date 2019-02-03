@@ -6,10 +6,16 @@ desc: "Everything having to do with testing: Unit testing, Integration Testing, 
 # Test Driven Development (TDD)
 
 * <http://www.agiledata.org/essays/tdd.html>
+* <https://www.agilealliance.org/glossary/unit-test>
+
 
 # Acceptance Testing
 
 * <http://www.agilemodeling.com/artifacts/acceptanceTests.htm>
+* <https://www.agilealliance.org/glossary/acceptance>
+* <http://bit.ly/cs48-w19-h06-article> (Note that the video is not accessible, but the text content should be.)
+* <http://agileforgrowth.com/blog/acceptance-criteria-checklist/>
+
 
 # Test Coverage
 
