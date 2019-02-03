@@ -7,6 +7,10 @@ desc: "Everything having to do with testing: Unit testing, Integration Testing, 
 
 * <http://www.agiledata.org/essays/tdd.html>
 
+# Acceptance Testing
+
+* <http://www.agilemodeling.com/artifacts/acceptanceTests.htm>
+
 # Test Coverage
 
 It's helpful to be able to measure how much of our code is covered by tests.  This metric is known as "test coverage"
