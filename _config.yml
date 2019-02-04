@@ -33,6 +33,14 @@ collections:
     output: true
     permalink: /topics/:path/
 
+  pytopics:
+    output: true
+    permalink: /pytopics/:path/
+    
+  jstopics:
+    output: true
+    permalink: /jstopics/:path/   
+
   standards:
     output: true
     permalink: /standards/:path/
@@ -79,6 +87,19 @@ defaults:
       type: topics
     values:
       layout: default
+      
+ - scope:
+      path: ""
+      type: pytopics
+    values:
+      layout: default      
+
+ - scope:
+      path: ""
+      type: jstopics
+    values:
+      layout: default      
+
 
   - scope:
       path: ""
