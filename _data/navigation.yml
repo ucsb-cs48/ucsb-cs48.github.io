@@ -21,12 +21,18 @@ home:
 main_dropdown:
    title: Resources
    items:
+     - title: JavaScript Topics
+       url: /jstopics/       
+     - title: Links
+       url: /links/
      - title: Topics
-       url: /topic_list/
+       url: /topics/
      - title: Patterns
-       url: /patterns_list/
+       url: /patterns/
+     - title: Python Topics
+       url: /pytopics/
      - title: Standards
-       url: /standards_list/       
+       url: /standards/       
 
 offerings:
    title: W19

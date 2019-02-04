@@ -1,6 +1,6 @@
 ---
 title: Standards
-permalink: "/standards_list/"
+permalink: "/standards/"
 ---
 
 ## Standards

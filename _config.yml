@@ -88,13 +88,13 @@ defaults:
     values:
       layout: default
       
- - scope:
+  - scope:
       path: ""
       type: pytopics
     values:
       layout: default      
 
- - scope:
+  - scope:
       path: ""
       type: jstopics
     values:

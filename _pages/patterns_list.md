@@ -1,6 +1,6 @@
 ---
 title: Design Patterns
-permalink: "/patterns_list/"
+permalink: "/patterns/"
 ---
 
 ## Design Patterns
