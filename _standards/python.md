@@ -9,3 +9,7 @@ category_prefix: "Python: "
 
 * <https://realpython.com/python-pep8/>
 
+# Making Projects Installable
+
+* <http://flask.pocoo.org/docs/1.0/tutorial/install/>
+
