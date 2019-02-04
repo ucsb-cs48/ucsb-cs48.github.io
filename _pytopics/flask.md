@@ -41,3 +41,7 @@ category_prefix: "Flask: "
 
 * Building and Documenting Python REST APIs With Flask and Connexion 
    * <https://realpython.com/flask-connexion-rest-api/>
+   
+# Interacting with APIs
+
+* Slack <https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/>
