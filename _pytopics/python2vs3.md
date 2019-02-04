@@ -32,7 +32,7 @@ works.  And there are many more such changes.
 
 # What version should I use
 
-In this course, we've chosen to use Python 3.    By now, most of the major useful libraries *are* available for Python&nbsp;3, and that is the
+By now, most of the major useful libraries *are* available for Python&nbsp;3, and that is the
 future direction for the language.   
 
 However, many computer systems may still have Python 2 installed as the "default" Python, that is, the one you get if you don't specify.
