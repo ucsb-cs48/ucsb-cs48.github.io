@@ -22,8 +22,13 @@ category_prefix: "Flask: "
 * Flask By Example (from [RealPython.com](https://realpython.com)):
    * [Part 1](https://realpython.com/flask-by-example-part-1-project-setup/) Project Setup
    * [Part 2](https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/) Postgres, SQLAlchemy, Alembic
-
-
+   * [Part 3]() 
+   * [Part 4](https://realpython.com/flask-by-example-implementing-a-redis-task-queue/) Implementing a Redis Task Queue 
+      * For background processing of things that take longer than a single web request/response should take
+   * [Part 5](https://realpython.com/flask-by-example-integrating-flask-and-angularjs/) Integrating Flask and AngularJS
+   * [Part 6]() 
+   * [Part 7](https://realpython.com/flask-by-example-updating-the-ui/) Updating the UI
+   * [Part 8]() 
 
 ## Front End Work
 
