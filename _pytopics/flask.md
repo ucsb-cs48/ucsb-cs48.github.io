@@ -9,9 +9,7 @@ category_prefix: "Flask: "
 
 ## Getting Started
 
-* Introduction to Flask: Setting up a Static Site
-   * Not a webapp, but a static site.
-   * <https://realpython.com/introduction-to-flask-part-1-setting-up-a-static-site/>
+* The Official Tutorial: <http://flask.pocoo.org/docs/1.0/tutorial/#tutorial>
 
 * Python Web Applications With Flask (from [RealPython.com](https://realpython.com)):
    * [Part 1](https://realpython.com/python-web-applications-with-flask-part-i/) Application Setup
