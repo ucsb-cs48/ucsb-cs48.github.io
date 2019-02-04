@@ -35,8 +35,10 @@ category_prefix: "Flask: "
 
 ## Front End Work
 
-* Incorporating React and Bower: <https://realpython.com/the-ultimate-flask-front-end/>
-
+* "The Ultimate Flask Front End" 
+   * [Part 1](https://realpython.com/the-ultimate-flask-front-end): Incorporating React and Bower
+   * [Part 2](https://realpython.com/the-ultimate-flask-front-end-part-2/): React, Gulp and Tasks 
+   
 ## RESTFul APIs
 
 * Building and Documenting Python REST APIs With Flask and Connexion 
