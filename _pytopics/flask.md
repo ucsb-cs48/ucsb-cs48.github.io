@@ -19,6 +19,12 @@ category_prefix: "Flask: "
    * [Part 3](https://realpython.com/python-web-applications-with-flask-part-iii/)  Testing, Mocks, Integration Tests, Debugging, Error Handling, Logging.
 
 
+* Flask By Example (from [RealPython.com](https://realpython.com)):
+   * [Part 1](https://realpython.com/flask-by-example-part-1-project-setup/) Project Setup
+   * [Part 2](https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/) Postgres, SQLAlchemy, Alembic
+
+
+
 ## Front End Work
 
 * Incorporating React and Bower: <https://realpython.com/the-ultimate-flask-front-end/>
