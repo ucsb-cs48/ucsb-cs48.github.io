@@ -9,7 +9,15 @@ category_prefix: "Flask: "
 
 ## Getting Started
 
-* <https://realpython.com/introduction-to-flask-part-1-setting-up-a-static-site/>
+* Introduction to Flask: Setting up a Static Site
+   * Not a webapp, but a static site.
+   * <https://realpython.com/introduction-to-flask-part-1-setting-up-a-static-site/>
+
+* Python Web Applications With Flask (from [RealPython.com](https://realpython.com)):
+   * [Part 1](https://realpython.com/python-web-applications-with-flask-part-i/) Application Setup
+   * [Part 2](https://realpython.com/python-web-applications-with-flask-part-ii/) Users, Templates, Static Files
+   * [Part 3](https://realpython.com/python-web-applications-with-flask-part-iii/)  Testing, Mocks, Integration Tests, Debugging, Error Handling, Logging.
+
 
 ## Front End Work
 
