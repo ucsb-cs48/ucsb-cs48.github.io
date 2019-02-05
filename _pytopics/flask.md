@@ -45,3 +45,7 @@ category_prefix: "Flask: "
 # Interacting with APIs
 
 * Slack <https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/>
+
+# Profiling for performance
+
+* <https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-debugging-testing-and-profiling-legacy>
