@@ -30,6 +30,7 @@ There is not agreement on whether design is best done:
 When design is done "up-front", a "design document" is typically produced *before* coding starts.
 Example:
    * <https://www.its.dot.gov/research_archives/msaa/pdf/MSAA_SystemDesignFINAL.pdf>
+   * <https://blog.tara.ai/software-design-documents/>
 
 ## Aspects of design ##
 
