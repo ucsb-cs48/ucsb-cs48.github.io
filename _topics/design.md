@@ -23,11 +23,11 @@ Some areas of controversy:
 
 ## Upfront vs. Emergent Design
 
-Is design done:
+There is not agreement on whether design is best done:
 * Up-front before any coding begins (Waterfall, Rational Unified Process)
 * As an emergent property (Agile) through iteration and refactoring
 
-** Aspects of design**:
+## Aspects of design ##
 
 These are not mutually exclusive, but when we talk about design, we might be talking about any or all of these:
 
