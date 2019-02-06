@@ -27,6 +27,10 @@ There is not agreement on whether design is best done:
 * Up-front before any coding begins (Waterfall, Rational Unified Process)
 * As an emergent property (Agile) through iteration and refactoring
 
+When design is done "up-front", a "design document" is typically produced *before* coding starts.
+Example:
+   * <https://www.its.dot.gov/research_archives/msaa/pdf/MSAA_SystemDesignFINAL.pdf>
+
 ## Aspects of design ##
 
 These are not mutually exclusive, but when we talk about design, we might be talking about any or all of these:
