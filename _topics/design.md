@@ -54,20 +54,26 @@ and are quoted here together with the references cited:
 
 > Software design is the process by which an agent creates a specification of a software artifact, 
 > intended to accomplish goals, using a set of primitive components and subject to constraints. [1] 
->
-> [1]  Ralph, P. and Wand, Y. (2009). A proposal for a formal definition of the design concept. In Lyytinen, K., Loucopoulos, P., Mylopoulos, J., and Robinson, W., editors, Design Requirements Workshop (LNBIP 14), pp. 103–136. Springer-Verlag, p. 109 [doi:10.1007/978-3-540-92966-6_6](https://link.springer.com/chapter/10.1007%2F978-3-540-92966-6_6).
-
+> 
 > Software design may refer to either "all the activity involved in conceptualizing, framing, implementing, commissioning, 
 > and ultimately modifying complex systems" or "the activity following requirements specification and before programming, 
 > as ... [in] a stylized software engineering process." [2]
 >
->  [2] Freeman, Peter; David Hart (2004). "A Science of design for software-intensive systems". Communications of the ACM. 47 (8): 19–21 [20]. [doi:10.1145/1012037.1012054](https://dl.acm.org/citation.cfm?doid=1012037.1012054).
-
+>
 > Software design usually involves problem solving and planning a software solution. 
 > This includes both a low-level component and algorithm design and a high-level, architecture design.
 
-One observation about the definition from Freeman and Hart (reference [2](https://dl.acm.org/citation.cfm?doid=1012037.1012054) is that placing design as the "activity following requirements specification and before programming" may well be rooted in a certain
-world-view, namely the Waterfall model in which these activities are assumed to be linear.   This is at odds with the Agile approach in which designs emerge
-from starting with the "simplest thing that could possibly work" and the successively refactoring as code smells are replaced with known design patterns through refactoring recipes as
-recommended by Martin Fowler (see for example: [<i>Refactoring: improving the design of existing code</i>. Addison-Wesley, 2018](https://www.worldcat.org/title/refactoring-improving-the-design-of-existing-code/oclc/989996110&referer=brief_results))
+One observation about the definition from Freeman and Hart (reference [2]) is that placing design as the "activity following requirements specification and before programming" may well be rooted in a certain
+world-view, namely the Waterfall model in which these activities are assumed to be linear.   
+
+This is at odds with the Agile approach in which designs emerge
+from starting with the "simplest thing that could possibly work" and the successively refactoring as code smells are replaced with known design patterns through refactoring recipes as recommended by Martin Fowler [3] 
+
+# References
+
+[1]  Ralph, P. and Wand, Y. (2009). A proposal for a formal definition of the design concept. In Lyytinen, K., Loucopoulos, P., Mylopoulos, J., and Robinson, W., editors, Design Requirements Workshop (LNBIP 14), pp. 103–136. Springer-Verlag, p. 109 [doi:10.1007/978-3-540-92966-6_6](https://link.springer.com/chapter/10.1007%2F978-3-540-92966-6_6).
+
+[2] Freeman, Peter; David Hart (2004). "A Science of design for software-intensive systems". Communications of the ACM. 47 (8): 19–21 [20]. [doi:10.1145/1012037.1012054](https://dl.acm.org/citation.cfm?doid=1012037.1012054).
+
+[3] [<i>Refactoring: improving the design of existing code</i>. Addison-Wesley, 2018](https://www.worldcat.org/title/refactoring-improving-the-design-of-existing-code/oclc/989996110&referer=brief_results))
 
