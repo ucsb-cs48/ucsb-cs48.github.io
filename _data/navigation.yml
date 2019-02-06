@@ -56,7 +56,7 @@ offering_links:
   - title: Project
     url: /project_list/
     description: "Project"
- - title: Exam
+  - title: Exam
     url: /exam_list/
     description: "Exams"
   - title: Cal
