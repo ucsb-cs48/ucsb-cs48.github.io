@@ -31,6 +31,17 @@ When design is done "up-front", a "design document" is typically produced *befor
 Example:
    * <https://www.its.dot.gov/research_archives/msaa/pdf/MSAA_SystemDesignFINAL.pdf>
    * <https://blog.tara.ai/software-design-documents/>
+   * <https://www.altexsoft.com/blog/business/software-documentation-types-and-best-practices/>
+   
+Critics of design document note that they are often:
+* Out of date before they are even completed
+* Seldom kept up-to-date as development proceeds
+* Sometimes ignored completely
+* Time-consuming to produce relative to the value returned
+
+On the other hand:
+* This does not mean that design is unimportant.  
+* There are contexts where a design document may be absolutely necessary.
 
 ## Aspects of design ##
 
