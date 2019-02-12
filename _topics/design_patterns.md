@@ -13,6 +13,11 @@ Resources:
 * <https://github.com/kamranahmedse/design-patterns-for-humans>
 * <https://www.linkedin.com/pulse/art-design-patterns-android-ahmed-iraki/>
 
+
+# Design Patterns in a Python Context
+
+* <https://www.toptal.com/python/python-design-patterns>
+
 # Design Patterns in a JavaScript Context
 
 * Learning JavaScript Design Patterns, by Adnan Osmani (O'Reilly, 2012)
