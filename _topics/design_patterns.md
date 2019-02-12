@@ -19,6 +19,7 @@ Resources:
 * <https://www.toptal.com/python/python-design-patterns>
 * <https://github.com/faif/python-patterns>
 * <https://python-3-patterns-idioms-test.readthedocs.io/en/latest/PatternConcept.html>
+* <https://www.tutorialspoint.com/python_design_patterns/index.htm>
 
 # Design Patterns in a JavaScript Context
 
