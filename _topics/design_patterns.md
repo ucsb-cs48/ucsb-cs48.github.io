@@ -12,3 +12,8 @@ Resources:
 * <https://sourcemaking.com/design_patterns>
 * <https://github.com/kamranahmedse/design-patterns-for-humans>
 * <https://www.linkedin.com/pulse/art-design-patterns-android-ahmed-iraki/>
+
+# Design Patterns in a JavaScript Context
+
+* Learning JavaScript Design Patterns, by Adnan Osmani (O'Reilly, 2012)
+  * From on UCSB Campus, or via UCSB VPN: <https://proquest.safaribooksonline.com/book/programming/javascript/9781449334840>
