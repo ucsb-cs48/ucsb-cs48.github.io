@@ -17,6 +17,7 @@ Resources:
 # Design Patterns in a Python Context
 
 * <https://www.toptal.com/python/python-design-patterns>
+* <https://github.com/faif/python-patterns>
 
 # Design Patterns in a JavaScript Context
 
