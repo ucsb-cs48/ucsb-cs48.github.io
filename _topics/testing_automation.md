@@ -34,3 +34,8 @@ An easy way to get started with continuous integration is with Travis-CI.
 
 
 There are many more; this is only a partial list.  Visit <https://docs.travis-ci.com/user/languages> for the full list.
+
+# More on Travis-CI
+
+* <https://docs.travis-ci.com/user/for-beginners/>
+* <https://docs.travis-ci.com/user/customizing-the-build/>
