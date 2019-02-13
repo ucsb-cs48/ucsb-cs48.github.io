@@ -50,6 +50,15 @@ For Python:
    * [`mypy`](http://mypy-lang.org/) is a static type checker for Python
    * The github repo [`facebookincubator/ptr`](https://github.com/facebookincubator/ptr/blob/master/README.md) discusses a Python Test Runner that incorporates running a test suite and computing test coverage along with running both `black` and `mypy`
 
+# Other Test Types
+
+The term *smoke test* or *sanity test* is sometimes used to refer to a test that is run during staging (i.e. putting a new version of an application into production).  It is a "fast test that is done by a script or human that ensures that the application under test works to minimal expectation. For example, a human run smoke test involves logging into the app and doing some usual activities such as conduct a search or exercise a standard feature."
+
+The idea is that if the team has done a reasonable job of testing the code base, then it is sufficient to do a quick test to make sure that all of the pieces are up and talking to each other (the various processes, servers, databases, APIs, etc.)  If a major component is failing, then it will show up quickly during a properly designed smoke test.
+
+* Source: <https://www.mabl.com/blog/software-testing-in-staging-phase-of-deployment>
+
+
 
 # Test Driven Development (TDD)
 
