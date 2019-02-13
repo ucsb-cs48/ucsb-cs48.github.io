@@ -15,6 +15,8 @@ Antonucci's article divides the topic of testing into six areas.  The first thre
 | Unit Tests | "the simplest test[s] for the smallest possible pieces of your program." |
 | Integration Tests | "check how well separate units [of the code] integrate together" |
 | Acceptance Tests | "shift away from what pieces of code should do to what users should do. These tests are based around common user tasks like logging in, submitting a form, navigating content, and having their privacy invaded by tracking scripts. This usually makes acceptance tests the highest-level tests for any application, and often the most important." |
+{:.table .table-sm .table-striped .table-bordered}
+
 
 The last of these is also sometimes called "end-to-end" testing when it is automated.  In Antonucci's article, acceptance testing refers to automated tests of acceptance criteria: for example, for web apps, these tests might be automated using a "headless brower".
 
@@ -31,6 +33,7 @@ These are related to the acceptance tests that might be carried out by a human t
 | Visual Regression Testing | "for unexpected (or expected) visual changes in the app".  Compares before and after screenshots of the app as it runs, pixel-by-pixel |
 | Accessibility Testing | Tests for accessibility of apps for users with different abilities (e.g. low-vision, color-vision-issues, blind users that interact with screen reading software). |
 | Code Quality Tests | Using linters to look through a code base for issues such as code duplication, security risks, style conventions (e.g. indenting), overly complex control structures, etc. |
+{:.table .table-sm .table-striped .table-bordered}
 
 
 # Test Driven Development (TDD)
