@@ -35,6 +35,21 @@ These are related to the acceptance tests that might be carried out by a human t
 | Code Quality Tests | Using linters to look through a code base for issues such as code duplication, security risks, style conventions (e.g. indenting), overly complex control structures, etc. |
 {:.table .table-sm .table-striped .table-bordered}
 
+# Code Quality Tests
+
+The last of these three, "code quality tests" deserves a special mention, especially pretty-printers and linters.
+
+* *pretty-printer or *pretty-printing* is a technical term for programs that do automatic code formatting.  
+* *linter* or *linting* is a technical term for programs that do *static analysis* on program source code to find code quality problems.    
+By *static analysis*, we mean that the program parses and analyzes the code, similar to the way a compiler does, but rather than generating executable code or bytecodes, or directly carrying out the program, it analyzes the code *without executing it*.  That is what makes this *static* analysis as opposed to *dynamic* analysis of program behavior (*dynamic* implies that we execute the code in order to measure its behavior).
+
+There are a variety of programs to do this kind of analysis for the languages typically used in CS48.
+
+For Python:
+   * [`black`](https://pypi.org/project/black/) is a code formatter 
+   * [`mypy`](http://mypy-lang.org/) is a static type checker for Python
+   * The github repo [`facebookincubator/ptr`](https://github.com/facebookincubator/ptr/blob/master/README.md) discusses a Python Test Runner that incorporates running a test suite and computing test coverage along with running both `black` and `mypy`
+
 
 # Test Driven Development (TDD)
 
