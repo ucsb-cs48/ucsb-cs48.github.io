@@ -30,6 +30,7 @@ An easy way to get started with continuous integration is with Travis-CI.
 | JavaScript with node.js | <https://docs.travis-ci.com/user/languages/javascript-with-nodejs/> |
 | Python | <https://docs.travis-ci.com/user/languages/python/> |
 | Ruby | <https://docs.travis-ci.com/user/languages/ruby/> |
-{:table }
+{:.table .table-sm .table-striped .table-bordered}
+
 
 There are many more; this is only a partial list.  Visit <https://docs.travis-ci.com/user/languages> for the full list.
