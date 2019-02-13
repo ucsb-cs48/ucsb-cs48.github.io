@@ -31,7 +31,7 @@ Unit tests in JavaScript:
 
 For integration tests, you may need more than a simple test framework.
 
-For front-end testing of Python Web Apps, for example:
+For front-end testing of Python Web Apps, for example, or any kind of app built with React:
 * <https://testdriven.io/blog/modern-frontend-testing-with-cypress/>
 
 ## Acceptance Tests (aka end-to-end tests)
