@@ -2,6 +2,7 @@
 topic: "Testing: Jacoco Reports"
 desc: "How to interpret the reports (red, yellow, green)"
 indent: true
+category_prefix: "Testing: "
 ---
 
 # How to read the test coverage reports
