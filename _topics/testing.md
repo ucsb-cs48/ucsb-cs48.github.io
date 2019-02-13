@@ -4,9 +4,11 @@ desc: "Everything having to do with testing: Unit testing, Integration Testing, 
 category_prefix: "Testing: "
 ---
 
-The article [The Testing Introduction I Wish I Had](https://dev.to/maxwell_dev/the-testing-introduction-i-wish-i-had-2dn) by [Max Antonucci](https://dev.to/maxwell_dev) is a great introduction to testing (and according to [dev.to](https://dev.to) is a 14 minute read).
+The article [The Testing Introduction I Wish I Had](https://dev.to/maxwell_dev/the-testing-introduction-i-wish-i-had-2dn) is a great introduction to testing   It is written by [Max Antonucci](https://dev.to/maxwell_dev) and according to [dev.to](https://dev.to) is a 14 minute read.
 
-It divides the topic of testing into six areas.  The first three of these are  core areas of testing that most treatments of the topic mention:
+# Three core test types
+
+Antonucci's article divides the topic of testing into six areas.  The first three of these are  core areas of testing that most treatments of the topic mention:
 
 | Test type | Explanation |
 |-----------|--------------|
