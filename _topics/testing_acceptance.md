@@ -12,3 +12,4 @@ indent: true
 * <https://www.agilealliance.org/glossary/acceptance>
 * <http://bit.ly/cs48-w19-h06-article> (Note that the video is not accessible, but the text content should be.)
 * <http://agileforgrowth.com/blog/acceptance-criteria-checklist/>
+* <https://open.nytimes.com/no-code-no-problem-writing-tests-in-plain-english-537827eaaa6e>
