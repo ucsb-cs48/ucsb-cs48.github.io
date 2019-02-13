@@ -27,6 +27,10 @@ also referred to as customer-facing or acceptance tests.
 
 # Agile Testing Quadrants
 
+<em>Figure 8 of Chapter 8 defines four quadrants as shown in the diagram below.</em>
+
+![Figure 8 from Crispin and Gregory](figure_8.png)
+
 Acceptance tests in Quadrant 2 are written for each story before coding starts. They help the
 team to understand what code to write. Quadrant 1 activities ensure internal quality, maximize
 team productivity, and minimize technical debt. Quadrant 2 tests define and verify quality, and
