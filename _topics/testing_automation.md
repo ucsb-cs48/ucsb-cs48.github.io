@@ -39,3 +39,7 @@ There are many more; this is only a partial list.  Visit <https://docs.travis-ci
 
 * <https://docs.travis-ci.com/user/for-beginners/>
 * <https://docs.travis-ci.com/user/customizing-the-build/>
+
+# Alternatives to Travis-CI
+
+* <https://dev.to/krusenas/whats-your-favourite-cicd-tool-and-why-52ll>
