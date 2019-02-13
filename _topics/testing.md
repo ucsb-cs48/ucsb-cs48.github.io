@@ -66,9 +66,16 @@ By *static analysis*, we mean that the program parses and analyzes the code, sim
 There are a variety of programs to do this kind of analysis for the languages typically used in CS48.
 
 For Python:
+
+* Linters:
+   * [`flake`](https://hackingthelibrary.org/posts/2018-02-08-lint/) 
+   * [`pylint`](https://www.pylint.org/) also discussed here: [How Python Linters Will Save Your Large Python Project](https://jeffknupp.com/blog/2016/12/09/how-python-linters-will-save-your-large-python-project/) 
    * [`black`](https://pypi.org/project/black/) is a code formatter 
    * [`mypy`](http://mypy-lang.org/) is a static type checker for Python
    * The github repo [`facebookincubator/ptr`](https://github.com/facebookincubator/ptr/blob/master/README.md) discusses a Python Test Runner that incorporates running a test suite and computing test coverage along with running both `black` and `mypy`
+
+For JavaScript:
+   * [`eslint`](https://eslint.org/docs/user-guide/getting-started)
 
 # Other Test Types
 
