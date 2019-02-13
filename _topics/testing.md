@@ -29,6 +29,11 @@ Unit tests in JavaScript:
 
 ## Integration Tests
 
+For integration tests, you may need more than a simple test framework.
+
+For front-end testing of Python Web Apps, for example:
+* <https://testdriven.io/blog/modern-frontend-testing-with-cypress/>
+
 ## Acceptance Tests (aka end-to-end tests)
 
 The last of these is also sometimes called "end-to-end" testing when it is automated.  In Antonucci's article, acceptance testing refers to automated tests of acceptance criteria: for example, for web apps, these tests might be automated using a "headless brower".
