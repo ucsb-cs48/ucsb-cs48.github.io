@@ -17,8 +17,19 @@ Antonucci's article divides the topic of testing into six areas.  The first thre
 | Acceptance Tests | "shift away from what pieces of code should do to what users should do. These tests are based around common user tasks like logging in, submitting a form, navigating content, and having their privacy invaded by tracking scripts. This usually makes acceptance tests the highest-level tests for any application, and often the most important." |
 {:.table .table-sm .table-striped .table-bordered}
 
+Here's a bit more on each of these:
+
+## Unit tests
+
 Writing good unit tests has some different conventions from writing production code.  
 * This article discusses some of those: <https://mtlynch.io/good-developers-bad-tests/>
+
+Unit tests in JavaScript:
+* <https://areknawo.com/lets-talk-js-unit-testing/>
+
+## Integration Tests
+
+## Acceptance Tests (aka end-to-end tests)
 
 The last of these is also sometimes called "end-to-end" testing when it is automated.  In Antonucci's article, acceptance testing refers to automated tests of acceptance criteria: for example, for web apps, these tests might be automated using a "headless brower".
 
