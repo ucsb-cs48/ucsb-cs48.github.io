@@ -6,6 +6,8 @@ category_prefix: "Testing: "
 
 The article [The Testing Introduction I Wish I Had](https://dev.to/maxwell_dev/the-testing-introduction-i-wish-i-had-2dn) is a great introduction to testing   It is written by [Max Antonucci](https://dev.to/maxwell_dev) and according to [dev.to](https://dev.to) is a 14 minute read.
 
+A good second article for those working on front-end development is this one: [Static vs Unit vs Integration vs E2E Testing for Frontend Apps](https://blog.kentcdodds.com/static-vs-unit-vs-integration-vs-e2e-testing-for-frontend-apps-ec4eb7e855d1).
+
 # Three core test types
 
 Antonucci's article divides the topic of testing into six areas.  The first three of these are  core areas of testing that most treatments of the topic mention:
