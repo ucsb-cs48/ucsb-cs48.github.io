@@ -62,9 +62,6 @@ offering_links:
   - title: Cal
     url: /info/calendar/
     description: "Assignment Calendar"
-  - title: Cal
-    url: /info/calendar/
-    description: "Assignment Calendar"
   - title: More
     dropdown:
        - title: Syllabus
