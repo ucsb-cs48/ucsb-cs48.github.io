@@ -60,3 +60,11 @@ This site is maintained in this github repo: <{{site.github_url}}>
 {% include patterns_list.md %}
 </div>
 </div>
+
+<blockquote markdown="1">
+
+Certainly errors in software are more difficult to fix than errors in books. In fact, my main conclusion after spending ten years of my life working on the TEX project is that software is hard. It’s harder than anything else I’ve ever had to do. While I was working on the TEX program, I was unable to do full-time teaching. Although I love teaching, I had to take a year off from it because there was just too much to keep in my head at one time. Writing a book is a little more difficult than writing a technical paper, but writing software is a lot more difficult than writing a book. 
+
+[Turing Award](https://amturing.acm.org/award_winners/knuth_1013846.cfm) winner [Donald E. Knuth](https://www-cs-faculty.stanford.edu/~knuth/), from [All Questions Answered](https://sites.cs.ucsb.edu/~ravenben/bits/knuth.pdf), lecture presented by Donald Knuth on October 5, 2001, at the Technische Universität, München, Germany. Appeared in Notices of the AMS 49:3, pp. 318-324.
+
+</blockquote>
