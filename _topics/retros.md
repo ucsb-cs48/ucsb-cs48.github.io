@@ -15,7 +15,7 @@ The purpose of a retro can be summed up as:
 
 On the [Agile101 Guide](https://agilealliance.org/agile101) 
 the "every sprint" retro is called the [heartbeat retros](https://www.agilealliance.org/glossary/heartbeatretro).
-We'l consider these terms to mean the same thing:
+We'll consider these terms to mean the same thing:
 * Sprint Retro
 * Iteration Retro
 * Heartbeat Retro
