@@ -21,6 +21,8 @@ Here are a few resources for learning JavaScript, and where each one is useful.
 
 # Resources for Learning JavaScript
 
+* <https://sivers.org/learn-js>
+
 * Head First JavaScript, [on campus](http://proquest.safaribooksonline.com/book/programming/javascript/9781449340124), [off-campus](http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/book/programming/javascript/9781449340124)
 
 * Many, many other JavaScript books in the O'Reilly Digital Library [on campus](http://proquest.safaribooksonline.com/search?q=javascript), [off-campus](http://proquest.safaribooksonline.com.com.proxy.library.ucsb.edu:2048/search?q=javascript)
