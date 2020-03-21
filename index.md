@@ -37,13 +37,14 @@ This site is maintained in this github repo: <{{site.github_url}}>
 {%- include topics_list.html -%}
 </div>
 </div>
-
+<!--
 {% include collapse-button.html label="Python Topics" id="pytopics" %}
 <div class="collapse" id="pytopics">
 <div class="card card-body" markdown="1">
 {%- include pytopics_list.html -%}
 </div>
 </div>
+-->
 
 
 {% include collapse-button.html label="JavaScript Topics" id="jstopics" %}
