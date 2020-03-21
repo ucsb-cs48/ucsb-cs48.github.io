@@ -7,3 +7,4 @@ category_prefix: "React: "
 # Tutorials
 
 * <https://thinkster.io/tutorials/create-a-react-component>
+* <https://thinkster.io/tutorials/getting-started-with-react>
