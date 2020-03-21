@@ -2,6 +2,7 @@
 topic: "JavaScript"
 desc: "Getting Started with Learning JavaScript"
 layout: default
+category_prefix: "JavaScript: "
 ---
 
 
