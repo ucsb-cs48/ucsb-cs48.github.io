@@ -9,6 +9,24 @@ Continuous Integration (CI) is an industry standard practice for professional so
 Some commonly used CI systems include:
 * Jenkins
 * Travis-CI
+* GitHub Actions
+
+# GitHub Actions
+
+GitHub actions are controlled via a hidden directory called `.github/workflows` in the root of a GitHub repository.
+
+Documentation:
+* <https://help.github.com/en/actions>
+
+Examples:
+* Java
+   * <https://github.com/ucsb-cs56-w20/open-lab-scheduler/tree/master/.github/workflows>
+   * <https://github.com/ucsb-cs56-w20/ucsb-courses-search/tree/master/.github/workflows>
+   * <https://github.com/ucsb-cs56-w20/mapache-search/tree/master/.github/workflows>
+   
+
+
+
 
 # Travis-CI
 
