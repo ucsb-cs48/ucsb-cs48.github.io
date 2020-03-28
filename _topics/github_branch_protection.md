@@ -15,4 +15,8 @@ That is, there may be some policy rules about merging changes into master:
 
 GitHub allows you to enforce some or all of these rules with branch protection.
 
-Branch protection is configured in the Settings menu of the repo
+Branch protection is configured in
+* the `Settings` menu of the repo,
+* under `Branches`
+* then select `Branch Protection Rules`
+
