@@ -1,7 +1,7 @@
 ---
 topic: "CSIL"
 desc: "Computer Science Instructional Lab machines"
-category_prefix: "CSIL: "
+category_prefix: "csil: "
 ---
 
 # What is CSIL?

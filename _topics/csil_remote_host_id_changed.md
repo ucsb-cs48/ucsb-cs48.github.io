@@ -2,7 +2,6 @@
 topic: "CSIL: Remote Host Id Changed"
 desc: "The scary REMOTE HOST ID CHANGED message with mention of SOMETHING NASTY"
 indent: true
-category_prefix: "CSIL: "
 ---
 
 # What does this mean?

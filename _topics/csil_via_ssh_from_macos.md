@@ -2,7 +2,6 @@
 topic: "CSIL: Via MacOS"
 desc: "Accessing CSIL from your MacOS system"
 indent: true
-category_prefix: "CSIL: "
 ---
 
 # Accessing CSIL from MacOS

@@ -36,6 +36,10 @@ collections:
   pytopics:
     output: true
     permalink: /pytopics/:path/
+
+  javatopics:
+    output: true
+    permalink: /javatopics/:path/
     
   jstopics:
     output: true
@@ -91,6 +95,12 @@ defaults:
   - scope:
       path: ""
       type: pytopics
+    values:
+      layout: default      
+
+  - scope:
+      path: ""
+      type: javatopics
     values:
       layout: default      
 

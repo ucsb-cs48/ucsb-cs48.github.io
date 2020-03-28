@@ -2,7 +2,6 @@
 topic: "CSIL: browser from command line"
 desc: "How to open a browser from the command line"
 indent: true
-category_prefix: "CSIL: "
 ---
 
 # Open URL from command line on CSIL

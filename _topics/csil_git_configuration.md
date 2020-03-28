@@ -2,7 +2,6 @@
 topic: "CSIL: git configuration"
 desc: "Configuring your CSIL account to use git"
 indent: true
-category_prefix: "CSIL: "
 ---
 
 This page has three sections:
