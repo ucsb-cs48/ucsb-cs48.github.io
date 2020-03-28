@@ -1,6 +1,6 @@
 ---
 topic: "Software Engineering"
-desc: ""
+desc: "What is meant by this term?"
 ---
 
 According to Wikipedia (retreived 02/28/2019), the term **Software Engineering** has been defined in many ways, including these:
