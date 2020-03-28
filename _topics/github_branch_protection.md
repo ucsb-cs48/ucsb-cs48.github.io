@@ -22,3 +22,4 @@ Branch protection is configured in
 * under `Branches`
 * then select `Branch Protection Rules`
 
+Note that an empty repo has no commits, and therefore no branches.  So you must have at least one commit (e.g. a README.md file) before you can define branch protection rules.
