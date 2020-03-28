@@ -1,7 +1,6 @@
 ---
-topic: "git: .gitignore files"
-desc: "What they are for and what to put in them"
-indent: true
+topic: "gitignore for Maven"
+desc: "An example gitignore for Java Maven projects"
 ---
 
 The `.gitignore` file is a hidden file in a Git repository that tells Git which files should NOT be committed to the repository.

@@ -46,6 +46,13 @@ This site is maintained in this github repo: <{{site.github_url}}>
 </div>
 -->
 
+{% include collapse-button.html label="Java Topics" id="javatopics" %}
+<div class="collapse" id="javatopics">
+<div class="card card-body" markdown="1">
+{%- include javatopics_list.html -%}
+</div>
+</div>
+
 
 {% include collapse-button.html label="JavaScript Topics" id="jstopics" %}
 <div class="collapse" id="jstopics">

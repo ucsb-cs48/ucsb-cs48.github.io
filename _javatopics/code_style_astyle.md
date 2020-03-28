@@ -1,7 +1,6 @@
 ---
 topic: "Code Style: astyle"
 desc: "automatic code indenting tool available on CSIL"
-indent: true
 ---
 
 Artistic Style (command line: `astyle`) is a tool to format Java code (i.e. fix your indentation and new lines).
