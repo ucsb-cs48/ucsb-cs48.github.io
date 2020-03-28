@@ -2,6 +2,8 @@
 topic: "github: branch protection"
 desc: "making sure PRs to master get code reviewed, for example"
 indent: true
+category_prefix: "git: "
+category_prefix_alt: "github: "
 ---
 
 In professional software development settings, it is a common practice to *protect the master branch*. 
