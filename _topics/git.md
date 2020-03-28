@@ -11,7 +11,7 @@ A *git repository* is a collection of files (a directory tree) for a software pr
 
 The commerical company *github* provides web-based software and cloud-based hosting for git repositories.
 * [github.com](https://github.com) is the main site for github services
-* [github.ucsb.edu](https://github.ucsb.edu) is a private instance of [*Github Enterprise* for UCSB maintained by ECI](http://eci.ucsb.edu/eci/services/github/)
+
 
 The article [git: overview](/topics/git_overview/) explains more.  In addition there are several other articles about git/github listed below.
 
@@ -22,3 +22,18 @@ The article [git: overview](/topics/git_overview/) explains more.  In addition t
 * Short Cut Keys
    * Did you know that when browsing files in github.com, you can type a ? and bring up a whole bunch of amazing short cut keys?
    * For example T is "fuzzy file search".  Have fun exploring all the rest.
+
+
+* Code Navigation: <https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github>
+
+# Windows
+
+If you find that when you type `git status` you see every single file is modified, it might be because of line endings.
+
+Type `git config --global core.autocrlf true` to fix it
+
+# Resources
+
+* [YouTube Video: Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?reload=9&v=ZDR433b0HJY)
+
+

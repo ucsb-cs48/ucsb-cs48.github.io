@@ -20,24 +20,9 @@ to the `master` branch.  This could be a pull request within the same repository
 
 # Using this workflow 
 
-You are encouraged to use the branch method to avoid accidentally
-making changes to pending/open pull requests while working on other
-issues. That might happen when you do all your work on master because
-pull requests don't use a snapshot of the code from the time that you
-made the pull request; instead, they point to the branch you are
-trying to pull from. This means if you push more changes to a branch
-after making a pull request from that branch, these changes will be
-reflected in the pull request immediately. And the goal here is to
-submit each issue you resolve in a separate pull request.
+You will use this branch method to avoid accidentally making changes to pending/open pull requests while working on other issues. That might happen when you do all your work on master because pull requests don't use a snapshot of the code from the time that you made the pull request; instead, they point to the branch you are trying to pull from. This means if you push more changes to a branch after making a pull request from that branch, these changes will be reflected in the pull request immediately. And the goal here is to submit each issue you resolve in a separate pull request.
 
-Ideally, you will **never have a pull request open from your master
-branch**. Instead, each pull request will be from a feature
-branch. That way, you can merge your feature branches into your own
-fork's master branch (once you are ready to integrate those changes
-into your application) at your leisure and it won't mess up your other
-pull requests (to merge a branch into your master branch, make sure
-you are on master and then call `git merge BRANCH_NAME`, but only do
-this on your fork).
+Every pull request should be from a feature branch.
 
 This will also show you how many teams develop software **in the real
 world**. In these environments, you **never, ever, ever** make changes
@@ -47,32 +32,23 @@ projects/pieces separate.
 
 # How to
 
-When beginning work on an issue, you should start clean from the
-master version. `git status` will tell you which branch you are on. If
-you are not on master, switch to master with `git checkout master`
-(your changes on the other branch will not be lost; they will still be
-there if you `git checkout` back to that branch). Make sure you are
-up-to-date by calling `git pull`, then create a new branch with `git
-checkout -b BRANCH_NAME`.
+When beginning work on an issue, you should start clean from the master version. `git status` will tell you which branch you are on. If you are not on master, switch to master with `git checkout master` (your changes on the other branch will not be lost; they will still be there if you `git checkout` back to that branch). Make sure you are up-to-date by calling `git pull`, then create a new branch with `git checkout -b BRANCH_NAME`.
+
+It is a good practice to start your branch name with the name
+of your team, followed by a hyphen and then a brief description
+of the feature you are working on.
 
 ```
-$ git checkout -b feature/text-color
-Switched to a new branch 'feature/text-color'
+$ git checkout -b teamName-text-color
+Switched to a new branch 'teamName-text-color'
 $
 ```
 
 The `-b` means to create a new branch; if you are switching to an existing branch, you can just leave off the `-b`. 
 
-Moving forward, you will use:
+As you work on this branch, you will use:
 
-* `git push origin feature/text-color` rather than `git push origin master`
-* `git pull origin feature/text-color` rather than `git pull origin master`
+* `git push origin teamName-text-color` rather than `git push origin master`
+* `git pull origin teamName-text-color` rather than `git pull origin master`
 
-Branch naming conventions vary slightly, but one way is to preface feature branches with "feature/" and bug-fixing branches with "hotfix/". For example, `feature/text-color` or `hotfix/empty-list-crash`.
-
-After you've committed all your changes on this feature branch, push
-it, and then open a new pull request to the master branch of the main repo
-from the branch you were working on and include the issue in the pull
-request description.
-
-![cs56-mentor-screenshot-pullrequest-branches](https://cloud.githubusercontent.com/assets/6810760/20235019/fad8cc34-a83b-11e6-85ae-d02c89a79ce7.png)
+After you've committed all your changes on this feature branch, push it, and then open a new pull request repo from the branch you were working on and include the issue in the pull request description.
