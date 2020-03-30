@@ -37,7 +37,7 @@ indent: true
 
    ```
    #!/usr/bin/env bash
-   heroku config:set HEROKU_PROPERTIES="$(cat secrets-heroku.properties)" "$@"
+   heroku config:set PRODUCTION_PROPERTIES="$(cat secrets-heroku.properties)" "$@"
    ```
 4. Deploy the app on Heroku
    
