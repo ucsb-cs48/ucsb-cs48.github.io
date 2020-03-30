@@ -2,6 +2,7 @@
 topic: "Java: Lambda Expressions"
 desc: "Shorter, cleaner code using anonymous functions"
 indent: true
+category_prefix: "Java: "
 ---
 
 Lambda expressions were introduced in Java 8.  They provide a much cleaner syntax than previous Java versions for the solution to 
