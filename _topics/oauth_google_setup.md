@@ -5,8 +5,9 @@ category_prefix: "OAuth: "
 indent: true
 ---
 
+# Setting up OAuth for Spring Boot
 
-# How to set up Google OAuth for `localhost`
+## How to set up Google OAuth for `localhost`
 
 1. Navigate to <https://developers.google.com/identity/sign-in/web/sign-in> to create a Google OAuth Application.
     - If you are asked "Where are you calling from", select "Web Server"
@@ -19,7 +20,7 @@ indent: true
    ```
 3. Run `mvn spring-boot:run`
 
-# How to set up Google OAuth for Heroku
+## How to set up Google OAuth for Heroku
 
 1. Navigate to <https://developers.google.com/identity/sign-in/web/sign-in> to create a Google OAuth Application.
     - If you are asked "Where are you calling from", select "Web Server"
@@ -40,4 +41,9 @@ indent: true
    ```
 4. Deploy the app on Heroku
    
-  
+## Using the script `convertGoogleCredentials.py`  
+
+When setting up Google OAuth, you can download the credentials into a file called `credentials.json`.
+
+The Python script `convertGoogleCredentials.py` available in the demo repo: <https://github.com/ucsb-cs48-s20/demo-spring-google-oauth-app> can be used to convert the `credentials.json` file to the format used in Spring Boot properties files.
+
