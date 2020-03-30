@@ -2,6 +2,7 @@
 topic: "Java: Annotations"
 desc: "All about those funny @ things that precede methods"
 indent: true
+category_prefix: "Java: "
 ---
 
 According to [this lesson on Java Annotations](https://docs.oracle.com/javase/tutorial/java/annotations/) from the Oracle website (retrieved 2016-06-20):
