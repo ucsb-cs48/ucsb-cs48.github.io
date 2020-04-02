@@ -17,3 +17,15 @@ desc: "Teleconferencing tool"
 
 * [Video: Managing Video Breakout Rooms](https://support.zoom.us/hc/en-us/articles/206476313-Managing-Video-Breakout-Rooms) (General Intro)
 * [Preassigning Participants To Breakout Rooms](https://support.zoom.us/hc/en-us/articles/360032752671-Pre-assigning-participants-to-breakout-rooms)
+
+Breakout Room CSV Format:
+
+```csv
+Pre-assign Room Name,Email Address
+room1,test1@xxx.com
+room1,test2@xxx.com
+room2,test3@xxx.com
+room2,test4@xxx.com
+room3,test5@xxx.com
+room3,test6@xxx.com
+```
