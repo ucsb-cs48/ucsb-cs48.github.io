@@ -35,10 +35,10 @@ At the end of the game, the overall *Winner* is the one with the most cards.
 
 Some sample cards:
 
-![card01]({{'card01_25pct.png' | relative_url }})
-![card02]({{'card02_25pct.png' | relative_url }})
-![card03]({{'card03_25pct.png' | relative_url }})
-![card04]({{'card04_25pct.png' | relative_url }})
+![card01]({{'/topics/minimum_viable_product/card01_25pct.png' | relative_url }})
+![card02]({{'/topics/minimum_viable_product/card02_25pct.png' | relative_url }})
+![card03]({{'/topics/minimum_viable_product/card03_25pct.png' | relative_url }})
+![card04]({{'/topics/minimum_viable_product/card04_25pct.png' | relative_url }})
 
 Now, consider these four proposals for building this product.  This illustrates an iterative approach to getting to an MVP.
 
