@@ -18,10 +18,12 @@ Example:
 
 * A case study: putting a card game online.
 * The card game: <https://dl.acm.org/doi/10.1145/3328778.3366989>
+  > Colleen M. Lewis and Phillip Conrad. 2020. 
+  > **Teaching Practices Game: Interactive Resources for Training Teaching Assistants**. 
+  > In Proceedings of the 51st ACM Technical Symposium on Computer Science Education (SIGCSE ’20). 
+  > Association for Computing Machinery, New York, NY, USA, 1110–1111. DOI:https://doi.org/10.1145/3328778.3366989
 
-  
-> Colleen M. Lewis and Phillip Conrad. 2020. Teaching Practices Game: Interactive Resources for Training Teaching Assistants. In Proceedings of the 51st ACM Technical Symposium on Computer Science Education (SIGCSE ’20). Association for Computing Machinery, New York, NY, USA, 1110–1111. DOI:https://doi.org/10.1145/3328778.3366989
-
+This was intended as a game with actual playing cards, to be played face to face.
 
 Game Rules for each round:
 
@@ -39,6 +41,8 @@ Some sample cards:
 ![card02]({{'/topics/minimum_viable_product/card02_25pct.png' | relative_url }})
 ![card03]({{'/topics/minimum_viable_product/card03_25pct.png' | relative_url }})
 ![card04]({{'/topics/minimum_viable_product/card04_25pct.png' | relative_url }})
+
+Proposal: Can we make a webapp that would allow for this training exercise to be done online, during the COVID-19 "All Zoom, all the time" era?
 
 Now, consider these four proposals for building this product.  This illustrates an iterative approach to getting to an MVP.
 
