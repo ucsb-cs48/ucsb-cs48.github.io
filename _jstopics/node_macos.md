@@ -5,6 +5,34 @@ indent: true
 category_prefix: "Node: "
 ---
 
+You can install node (which installs `npm` and `npx` along with it) either by
+* Directly obtaining an installer from: <https://nodejs.org/en/download/>
+* With the `brew` package manager (see below).
+
+# Installing node via brew
+
+One of the easiest ways to do this on MacOS is via the brew package manager.
+
+## Installing `brew`
+
+* To install `brew`, visit <https://brew.sh> and follow the instructions
+* Before installing anything with `brew`, it's good practice to run `brew update` first.
+* If your `brew` install is messed up, `brew doctor` can help restore a proper install.
+
+## Using `brew` to install node
+
+This command will install `node` using `brew`
+
+```
+brew install node
+```
+
+To test if it worked, you can try:
+
+```
+npm --version
+```
+
 # Install npm packages globally without sudo on macOS 
 
 These instructions work for Linux too.
