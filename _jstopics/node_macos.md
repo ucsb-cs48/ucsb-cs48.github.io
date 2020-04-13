@@ -2,6 +2,7 @@
 topic: "Node: MacOS"
 desc: "Installing and working with Node, npm, nvm on MacOS"
 indent: true
+category_prefix: "Node: "
 ---
 
 # Install npm packages globally without sudo on macOS 
