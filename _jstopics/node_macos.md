@@ -47,6 +47,8 @@ gyp: No Xcode or CLT version detected!
 Here are the instructions for doing so:
 
 * <https://medium.com/flawless-app-stories/gyp-no-xcode-or-clt-version-detected-macos-catalina-anansewaa-38b536389e8d>
+  * NOTE however that there is a missing step in those instructions.  After removing the old version of the XCode command line tools, to start the
+    process of reinstalling the XCode command line tools, type `git` at the command prompt.
 
 # Install npm packages globally without sudo on macOS 
 
