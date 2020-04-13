@@ -33,6 +33,21 @@ To test if it worked, you can try:
 npm --version
 ```
 
+# Error: `gyp: No Xcode or CLT version detected!`
+
+If you get an error like this one when you try to do `npm install`, then you may need to reinstall your XCode tools.
+
+```
+> node-gyp rebuild
+No receipt for 'com.apple.pkg.CLTools_Executables' found at '/'.
+No receipt for 'com.apple.pkg.DeveloperToolsCLILeo' found at '/'.
+No receipt for 'com.apple.pkg.DeveloperToolsCLI' found at '/'.
+gyp: No Xcode or CLT version detected!
+```
+Here are the instructions for doing so:
+
+* <https://medium.com/flawless-app-stories/gyp-no-xcode-or-clt-version-detected-macos-catalina-anansewaa-38b536389e8d>
+
 # Install npm packages globally without sudo on macOS 
 
 These instructions work for Linux too.
