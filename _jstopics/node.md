@@ -14,9 +14,9 @@ JavaScript as a basic scripting language (separated from any web browser.)
 You can download installers here for Windows, Mac and Linux: <https://nodejs.org/en/download/>
 
 Additional installation advice for specific platforms can be found here:
-* <>
-* <>
-* <>
+* MacOS: <https://ucsb-cs48.github.io/jstopics/node_macos/>
+* Windows: <https://ucsb-cs48.github.io/jstopics/node_windows/>
+* Linux: <https://ucsb-cs48.github.io/jstopics/node_linux/>
 
 # Deployment
 
