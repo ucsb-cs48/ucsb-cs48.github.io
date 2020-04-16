@@ -12,6 +12,16 @@ next.js is a framework for building webapps based on:
 
 The main website for next.js is here: <https://nextjs.org/>
 
+For clarification:
+
+* Nextjs is a framework that uses:
+  - React (a library of javascript functions/classes that is useful for UI) and 
+  - Node (a runtime for javascript that allows you to run javascript outside of a browser). 
+  
+The language being written in is javascript, in both cases.
+
+When people say they’re writing “in React”, they really mean they’re writing in javascript using React.
+
 
 # Troubleshooting strategies
 
