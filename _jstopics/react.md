@@ -16,6 +16,11 @@ A React Component has a `render` function that returns the HTML that goes into t
 * React Components can take in parameters
 * There are *lifecycle methods*
 
+# Hooks
+
+In a functional component, an alternative to the lifecycle methods.
+
+
 # Tutorials
 
 ## Reactjs.org
