@@ -13,6 +13,8 @@ A React Component has a `render` function that returns the HTML that goes into t
 * You build your pages with React components
 * The individual building blocks of your user interface. Components are re-usable.
 * They're useful for reusing elements in your page such as (layouts, menu bars, etc.)
+* React Components can take in parameters
+* There are *lifecycle methods*
 
 # Tutorials
 
