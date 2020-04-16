@@ -4,7 +4,14 @@ desc: "A framework based on node and React"
 category_prefix: "nextjs: "
 ---
 
-TODO: Fill this in
+next.js is a framework for building webapps based on:
+* the JavaScript language
+* the node server side framework
+* the express.js web server
+* the React front-end framework
+
+The main website for next.js is here: <https://nextjs.org/>
+
 
 # Troubleshooting strategies
 
