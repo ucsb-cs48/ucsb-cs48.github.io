@@ -20,6 +20,7 @@ A React Component has a `render` function that returns the HTML that goes into t
 
 In a functional component, an alternative to the lifecycle methods.
 
+They are functions that by convention, have names starting with `use`.
 
 # Tutorials
 
