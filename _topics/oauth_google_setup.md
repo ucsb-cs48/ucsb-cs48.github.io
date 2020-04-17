@@ -47,3 +47,6 @@ When setting up Google OAuth, you can download the credentials into a file calle
 
 The Python script `convertGoogleCredentials.py` available in the demo repo: <https://github.com/ucsb-cs48-s20/demo-spring-google-oauth-app> can be used to convert the `credentials.json` file to the format used in Spring Boot properties files.
 
+# `console.developers.google.com`
+
+You can manage existing Google OAuth projects from the url <https://console.developers.google.com/> 
