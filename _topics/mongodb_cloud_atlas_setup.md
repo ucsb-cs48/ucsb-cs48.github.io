@@ -108,6 +108,9 @@ The instructions in this article cover how to set up a new free account, up to t
   Access the menu item on the left for "Network Access",
   and then click the button to "ADD IP ADDRESS".
 
+  ![Select Add IP Address](10b-allow-access-from-anywhere-50.png)
+
+
   In the screen that comes up, there is a button for
   "Allow Access from Anywhere". This automatically enters the
   address block `0.0.0.0/0`, which is the standard notation for
@@ -115,6 +118,8 @@ The instructions in this article cover how to set up a new free account, up to t
 
   Click "Confirm" and then your MongoDB database will be accessible
   from anywhere.
+
+  ![Allow Access from Anywhere](10b-allow-access-from-anywhere.png)
 
 # Step 8: Create a MongoDB User
 
