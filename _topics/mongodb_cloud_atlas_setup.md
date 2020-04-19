@@ -122,9 +122,37 @@ The instructions in this article cover how to set up a new free account, up to t
 
 # Step 8: Create a MongoDB User
 
+  In this step, you will create a MongoDB user.
+  * Note that this is *not* the same as your user account for mongodb.com
+  * In particular, it is usually NOT tied to an individual, e.g. `cgaucho`
+  * Instead, this is typically a "username" such as `dbuser`
+    - It is sometimes the case that we create multiple usernames with different access levels, e.g.
+      `dbadmin`, `dbreadwrite` and/or `dbread`.
+  * This user gets created along with a password; that username/password comnb
+  * This username/password pair will get hardcoded in the configuration files (e.g. `.env` for a node app, or a `.properties` file for a Spring app), typically embedded in a MongoDB URI such as this one
+    (which contains fake credentials):
+
+    ```
+    mongodb+srv://adminuser:2w9zmu3pwN6QlPSX@cluster0-3b7ap.mongodb.net/test?retryWrites=true&w=majority
+    ```
+
   ![11-create-a-mongodb-user.png](11-create-a-mongodb-user-50.png)
 
+  Enter a name for the user you are creating.  If it is a user that has
+  admin privileges, it can be helpful to document this by called it `adminuser`, but the
+  name is really arbitrary.
+
+  To generate the password, it is strongly recommended to use the "Autogenerate Secure Password" button.
+  Note that you *cannot* access this password later.  However, you can change it without having to
+  regenerate the user.  Since we are not ready to put that password anywhere yet, I suggest
+  generating a random password, and coming back later to change it when you are ready to copy/paste it
+  into your configuration file (at a later step.)
+
+  Click "Create MongoDB User" to proceed.
+
   ![12-ready-to-connect.png](12-ready-to-connect-50.png)
+
+  
 
 # Step 9: Obtain the URI string for connection 
 
