@@ -91,19 +91,40 @@ The instructions in this article cover how to set up a new free account, up to t
   Therefore, you may need to return to this screen later to whitelist
   additional IP addresses.
 
-# Step 8: Whitelist the Entire Internet (not a "best practice")
+# Step 8: Whitelist the Entire Internet 
 
-  Although it is not the "best practice" in terms of security,
+  ## Why are we whitelisting the entire internet?
+  
+  We need to be able to access our MongoDB not only from our localhost,
+  but from the cloud providers where we deploy our app (e.g. now.sh
+  and/or Heroku).    
+  
+  Those services run on their own IP addresses, so ideally, 
+  we would need to whitelist those as well, or failing that, some
+  "address ranges" used by those services.
+
+  Unfortunately, as explained in the linked articles, this is not very feasible on the
+  free tiers of our cloud providers:
+  
+  * On Heroku, for the free tier, the best you can do is to whitelist an entire *region* of
+    Amazon Web Services.  That's pretty wide open, and the extra security gained by whitelisting "only"
+    vs. the entire internet, may not be worth the hassle. <https://help.heroku.com/JS13Y78I/i-need-to-whitelist-heroku-dynos-what-are-ip-address-ranges-in-use-at-heroku>.  There are solutions for the more expensive tiers of Heroku; if/when your
+    CS48 project turns into a commercial success that you can monetize, you could migrate to one of those.
+  * As for now.sh, they basically just say: "no" <https://github.com/zeit/now/issues/3723>
+  
+  Accordingly, although it may not be the "best practice" in terms of security,
   the easiest way to proceed is to whitelist the "entire internet".
 
-  The more secure alternative is to whitelist:
-  * Specfic addresses for the IP addresses you may have when you are
-    doing development.
-  * Specific address ranges for cloud providers such as `now.sh` and/or Heroku
+  ## So why we did we whitelist my own IP address?
 
-  That is more secure, but it can be tedious and error prone.
+  I wanted you to be familiar with the idea of whitelisting only a single IP address.
+    
+  At some point, you may find that useful if you are doing some testing, and/or if you are configuring other
+  applications for your own use.
 
-  So, to whitelist the entire internet, proceed as follows:
+  ## How do we whitelist the entire internet?
+
+  To whitelist the entire internet for MongoDB, proceed as follows:
   
   Access the menu item on the left for "Network Access",
   and then click the button to "ADD IP ADDRESS".
