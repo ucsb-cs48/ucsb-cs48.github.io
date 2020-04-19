@@ -150,27 +150,52 @@ The instructions in this article cover how to set up a new free account, up to t
 
   Click "Create MongoDB User" to proceed.
 
-  ![12-ready-to-connect.png](12-ready-to-connect-50.png)
 
+  That should take you to this screen, where you can click the green
+  "Choose a Connection Method" to access the next step.
   
+  ![12-ready-to-connect.png](12-ready-to-connect-50.png)
 
 # Step 9: Obtain the URI string for connection 
 
+  The next screen is accessed either by clicking the "Choose a Connection Method"
+  button at the end of the previous step, or by selecting "Cluster" from the
+  left menu bar, and clicking the connect button.
+
+  You are offered three choices for how to connect.  Choose "Connect your Application".
+
   ![13-connect-your-application.png](13-connect-your-application-50.png)
 
+  The next step depends on the tech stack of your application; you need to
+  select the "Driver" and "Version".
+
+  * For the next.js stack for CS48 in S20, the correct values are "node" and "3.0 or higher".
+  * For other tech stacks, make the selection that mostly closely fits your situation
+
+  You are then shown a connection string.  Copy this string, and then close the window.
+ 
   ![14-connection-string-node-3.0.png](14-connection-string-node-3.0-50.png)
+
+  You'll now want to paste this string into the correct place in the configuration for
+  your app.  Here is an example of pasting this string into the value of `MONGODB_URI` in the
+  file `.env` for next.js app:
+
+  ![19-edit-mongodb-uri-with-password-holder.png](19-edit-mongodb-uri-with-password-holder-50.png)
+
+  Note, however, that part of this string still has the text `<password>`.
+  * **You must replace this, including the angle brackets (`<>`) with the actual password**
+  * To obtain the actual password, we'll go to a screen where we can edit the database user
+    and change its password.
+
+# Step 10: Obtaining (changing) the DB User Password
 
   ![15-database-access-menu-item.png](15-database-access-menu-item-50.png)
 
   ![16-database-access-screen.png](16-database-access-screen-50.png)
 
-# Step 10: Obtaining (changing) the DB User Password
-
   ![17-edit-user.png](17-edit-user-50.png)
 
   ![18-change-db-user-password.png](18-change-db-user-password-50.png)
-
-  ![19-edit-mongodb-uri-with-password-holder.png](19-edit-mongodb-uri-with-password-holder-50.png)
 
   ![20-copy-password.png](20-copy-password-50.png)
 
