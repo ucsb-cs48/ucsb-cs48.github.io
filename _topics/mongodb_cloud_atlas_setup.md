@@ -41,25 +41,88 @@ The instructions in this article cover how to set up a new free account, up to t
 
   ![06-select-us-west.png](06-select-us-west-30.png)
 
+  Click the "Create Cluster" button.  This will launch Cluster Creation,
+  described in the next step.
+
 # Step 5: Cluster Creation
 
-  ![07-cluster-creation.png](07-cluster-creation-50.png)
+  At this point, there is about a 3 minute wait while your cluster is being
+  created.  The screen will look like this, with a blue progress bar
+  at the top, and a note that your cluster is being created in the center
+  of the screen.  
 
-  ![08-cluster-creation-done.png](08-cluster-creation-done-50.png)
+  ![07-cluster-creation.png](07-cluster-creation-30.png)
+
+  You can wait, or periodically refresh your page, until it looks like this.
+  This is your indication that cluster creation is finished:
+
+  At this point you are ready to click the "Connect" button
+  as shown below.
+
+  ![08-cluster-creation-done.png](08-cluster-creation-done-30.png)
+
+  That should take you to this screen, which will be described in the next
+  step.
 
   ![09-connect-to-cluster.png](09-connect-to-cluster-50.png)
 
 # Step 6: Whitelist Current IP Address
 
+  ![09a-connect-to-cluster.png](09a-connect-to-cluster-50.png)
+
+  When you click on the "Add Your Current IP Address" button, you'll
+  be deposited at this screen.   Add a description of the machine
+  and internet connection you are currently using, and click "Add IP Address".
+
   ![10-whitelist-current-ip-address.png](10-whitelist-current-ip-address-50.png)
 
-# Step 7: Create a MongoDB User
+  Note that this will *only* whitelist
+  the IP address of the computer on which you are running the web browser.
+
+  This should allow you to connect to the MongoDB database from your
+  application when running on `localhost` on that same computer.
+  
+  It will *not* however, allow access from:
+  * cloud platforms such as now.sh
+  * your same laptop, if it changes IP address (e.g. if you move from one
+    network to another, or if your ISP changes your apparent public IP address
+    from time-to-time).
+
+  Therefore, you may need to return to this screen later to whitelist
+  additional IP addresses.
+
+# Step 8: Whitelist the Entire Internet (not a "best practice")
+
+  Although it is not the "best practice" in terms of security,
+  the easiest way to proceed is to whitelist the "entire internet".
+
+  The more secure alternative is to whitelist:
+  * Specfic addresses for the IP addresses you may have when you are
+    doing development.
+  * Specific address ranges for cloud providers such as `now.sh` and/or Heroku
+
+  That is more secure, but it can be tedious and error prone.
+
+  So, to whitelist the entire internet, proceed as follows:
+  
+  Access the menu item on the left for "Network Access",
+  and then click the button to "ADD IP ADDRESS".
+
+  In the screen that comes up, there is a button for
+  "Allow Access from Anywhere". This automatically enters the
+  address block `0.0.0.0/0`, which is the standard notation for
+  "All IPv4 addresses", i.e. the entire Internet.
+
+  Click "Confirm" and then your MongoDB database will be accessible
+  from anywhere.
+
+# Step 8: Create a MongoDB User
 
   ![11-create-a-mongodb-user.png](11-create-a-mongodb-user-50.png)
 
   ![12-ready-to-connect.png](12-ready-to-connect-50.png)
 
-# Step 8: Obtain the URI string for connection 
+# Step 9: Obtain the URI string for connection 
 
   ![13-connect-your-application.png](13-connect-your-application-50.png)
 
@@ -69,7 +132,7 @@ The instructions in this article cover how to set up a new free account, up to t
 
   ![16-database-access-screen.png](16-database-access-screen-50.png)
 
-# Step 9: Obtaining (changing) the DB User Password
+# Step 10: Obtaining (changing) the DB User Password
 
   ![17-edit-user.png](17-edit-user-50.png)
 
