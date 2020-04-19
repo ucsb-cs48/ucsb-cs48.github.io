@@ -5,6 +5,13 @@ category_prefix: "OAuth: "
 indent: true
 ---
 
+These instructions apply when you are setting up Google OAuth **directly**, which is what we typically
+do for Spring Boot applications.
+
+If, instead, you are setting up Google OAuth using Auth0, follow these instructions instead:
+
+* <https://github.com/ucsb-cs48-s20/demo-nextjs-app/blob/master/docs/auth0-localhost.md>
+
 # Setting up Google OAuth for a web app
 
 Before you start, you need the name of your app, e.g. `cs48-cgaucho-lab00`.
