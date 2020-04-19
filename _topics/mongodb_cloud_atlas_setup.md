@@ -46,8 +46,7 @@ The instructions in this article cover how to set up a new free account, up to t
 
 ![18-change-db-user-password.png](18-change-db-user-password.png)
 
-![19-edit-mongodb-uri-with-password-holder.png](19-edit-mongodb-uri-with-passwo
-rd-holder.png)
+![19-edit-mongodb-uri-with-password-holder.png](19-edit-mongodb-uri-with-password-holder.png)
 
 ![20-copy-password.png](20-copy-password.png)
 
