@@ -209,6 +209,16 @@ The instructions in this article cover how to set up a new free account, up to t
   
   ![18-change-db-user-password.png](18-change-db-user-password-50.png)
 
-  ![20-copy-password.png](20-copy-password-50.png)
+  Paste in the password into the appropriate configuration file, replacing `<password>`, including
+  the angle brackets (`<>`).   Be sure to then click "Update User" rather than "Cancel",
+  so that the change in the password takes effect.
 
   ![21-paste-in-password.png](21-paste-in-password-50.png)
+
+# Step 11: Test your application
+
+  Congratulations: you are done. You should now be able to test your application
+  with MongoDB.
+
+  For more specific information, consult the specific MongoDB documentation for your tech stack.
+  
