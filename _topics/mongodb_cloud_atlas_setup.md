@@ -189,12 +189,24 @@ The instructions in this article cover how to set up a new free account, up to t
 
 # Step 10: Obtaining (changing) the DB User Password
 
-  ![15-database-access-menu-item.png](15-database-access-menu-item-50.png)
+  In this step, we replace the placeholder `<password>` with a correct
+  password for the user (e.g. `adminuser`).  It is not possible to look up the current
+  password, but it is possible to generate a new one.
+
+  To do this, select "Database Access" from the side menu, and then the "Edit" for
+  the appropriate user, as shown here:
 
   ![16-database-access-screen.png](16-database-access-screen-50.png)
 
+  This brings you to the following page, where you can click to edit the password:
+
   ![17-edit-user.png](17-edit-user-50.png)
 
+  On this page, click to generate a new password, **and copy it before you close the page**.
+
+  You may want to keep the page open until the new password is safely stored in the
+  configuration file where you need to put it.
+  
   ![18-change-db-user-password.png](18-change-db-user-password-50.png)
 
   ![20-copy-password.png](20-copy-password-50.png)
