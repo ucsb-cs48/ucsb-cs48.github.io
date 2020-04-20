@@ -1,5 +1,5 @@
 ---
-topic: Windows: WSL
+topic: "Windows: WSL"
 desc: "Setting up the Windows Subsystem for Linux (WSL)"
 indent: true
 category_prefix: "Windows: "
