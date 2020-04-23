@@ -5,7 +5,24 @@ category_prefix: "Heroku:"
 indent: true
 ---
 
-# When using `mvn heroku:deploy`: `Could not find app name: No 'heroku' remote found.` 
+# Seeing the logs for your app
+
+To see a continuous flow of the logs for your app:
+
+```
+heroku logs --tail --app app-name-goes-here
+```
+
+(requires `heroku` command line app, which is installed on CSIL.  Use `heroku login -i` to login through a CSIL ssh session.)
+
+# When using `mvn heroku:deploy`
+
+Note: this is a workflow based on including a heroku `plugin` in the `pom.xml` file.
+
+**We have not been using this workflow recently** in CS56 and CS48, but some tutorials
+might include it, so I'm leaving this in the documentation.
+
+Error: `Could not find app name: No 'heroku' remote found.` 
 
 Symptom: You use `mvn heroku:deploy` and see:
 

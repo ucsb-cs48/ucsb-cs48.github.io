@@ -6,6 +6,22 @@ category_prefix: "React: "
 
 * Main React Website: <https://reactjs.org/>
 
+# Components
+
+A React Component has a `render` function that returns the HTML that goes into the page.
+
+* You build your pages with React components
+* The individual building blocks of your user interface. Components are re-usable.
+* They're useful for reusing elements in your page such as (layouts, menu bars, etc.)
+* React Components can take in parameters
+* There are *lifecycle methods*
+
+# Hooks
+
+In a functional component, an alternative to the lifecycle methods.
+
+They are functions that by convention, have names starting with `use`.
+
 # Tutorials
 
 ## Reactjs.org

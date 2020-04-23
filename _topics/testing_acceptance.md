@@ -1,6 +1,6 @@
 ---
 topic: "Testing: Acceptance Testing"
-desc: "Everything having to do with testing: Unit testing, Integration Testing, Test Coverage"
+desc: "Criteria for being 'done' with an issue"
 category_prefix: "Testing: "
 indent: true
 ---
