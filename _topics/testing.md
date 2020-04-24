@@ -8,6 +8,8 @@ The article [The Testing Introduction I Wish I Had](https://dev.to/maxwell_dev/t
 
 A good second article for those working on front-end development is this one: [Static vs Unit vs Integration vs E2E Testing for Frontend Apps](https://blog.kentcdodds.com/static-vs-unit-vs-integration-vs-e2e-testing-for-frontend-apps-ec4eb7e855d1).
 
+This article takes the perspective that it is better to learn the testing pyramid from the top, instead of the bottom: <https://github.com/NoriSte/ui-testing-best-practices/blob/master/sections/beginners/top-to-bottom-approach.md>
+
 # Three core test types
 
 Antonucci's article divides the topic of testing into six areas.  The first three of these are  core areas of testing that most treatments of the topic mention:
