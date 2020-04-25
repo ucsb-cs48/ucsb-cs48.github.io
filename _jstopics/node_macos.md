@@ -50,6 +50,16 @@ Here are the instructions for doing so:
   * NOTE however that there is a missing step in those instructions.  After removing the old version of the XCode command line tools, to start the
     process of reinstalling the XCode command line tools, type `git` at the command prompt.
 
+If that doesn't work, here's another option:
+
+>    This worked for me.
+>
+>    Install full Xcode
+>    Open Xcode and the CLT will install
+>    Then run sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+>
+>    This uses the full Xcode CLT and node-gyp works.
+
 # Install npm packages globally without sudo on macOS 
 
 These instructions work for Linux too.
