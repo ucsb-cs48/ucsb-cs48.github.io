@@ -5,6 +5,27 @@ category_prefix	: "MongoDB: "
 indent: true
 ---
 
+# CRUD operations in MongoDB
+
+Basic documentation for Create / Read  / Update / Destroy can be found here:
+
+* <https://docs.mongodb.com/manual/crud/>
+
+Note that when reading this, everywhere you see something such as `db.collection.`, that corresponds to the `users`  variable in the code below.  
+
+```
+import { initDatabase } from "../../../utils/mongodb";
+
+export async function getStudents(section) {
+  const client = await initDatabase();
+  const users = client.collection("users");
+  ...
+```
+
+
+
+# Understanding node MongoDB examples you may find on the web
+
 In generic tutorials on accessing MongoDB from node, you may see examples such as this one (taken from the [W3Schools Node MongoDB documentation for a query with `find`](https://www.w3schools.com/nodejs/nodejs_mongodb_query.asp)
 
 ```
