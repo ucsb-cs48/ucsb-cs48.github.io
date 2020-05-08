@@ -1,12 +1,13 @@
 ---
-topic: "Mocking"
+topic: "Testing: Mocking"
 desc: "Intro to Mocking in Tests, and Framework-specific Examples"
 category_prefix: "Testing: "
+indent: true
 ---
 
 # What is mocking, and why do we need it in tests?
 
-This article is a good introduction to the use of mocks: https://circleci.com/blog/how-to-test-software-part-i-mocking-stubbing-and-contract-testing/
+This article is a good introduction to the use of mocks: <https://circleci.com/blog/how-to-test-software-part-i-mocking-stubbing-and-contract-testing/>
 
 The general idea is that, when testing (especially unit testing), you want to isolate your components so that each test examines exactly one thing. 
 
@@ -19,15 +20,19 @@ For example, if you wanted to test the previously described function, you would 
 
 # Framework-specific Examples
 
-## Java/ Spring Boot
+## Mocking with JavaScript testing using Jest
+
+Coming soon
+
+## Mocking in Java/ Spring Boot
 
 The most common mocking framework used for Java unit tests is Mockito.
-* This article is a quick introduction to using Mockito with Junit: https://www.springboottutorial.com/spring-boot-unit-testing-and-mocking-with-mockito-and-junit
+* This article is a quick introduction to using Mockito with Junit: <https://www.springboottutorial.com/spring-boot-unit-testing-and-mocking-with-mockito-and-junit>
 
 You can use Mockito to create mock objects directly, which you can then pass to your services in your unit tests. You then set the mock's "responses" to specific actions using the `when()` function. 
 For example, if you had created the mock object `foo` and wanted it to return `true` whenever the member function `bar` is called with the arguments `args`, you would write ` when(foo.bar(args).thenReturn(retval);`. You'd want to do this in a test where you know that `foo.bar` is going to be called with those arguments, and you simply want to return a hardcoded value rather than actually enter the `foo` class and run the function.
 
 In Spring Boot, you can also use the `@MockBean` annotation to indicate that all occurrences of that bean will be replaced with the mock. You can use the `when()` function the same way as a regular mock, but you are no longer dealing with a specific mock object each time.
-* This is the documentation for the `@MockBean` annotation: https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/mock/mockito/MockBean.html
-* This post discusses some of the differences between `@Mock` and `@MockBean`: https://stackoverflow.com/questions/44200720/difference-between-mock-mockbean-and-mockito-mock
-* You can see an example of `@MockBean` being used in this test file: https://github.com/ucsb-cs48-s20/project-idea-reviewer/blob/master/src/test/java/edu/ucsb/cs48/s20/demo/controllers/AdminControllerTest.java
+* This is the documentation for the `@MockBean` annotation: <https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/mock/mockito/MockBean.html>
+* This post discusses some of the differences between `@Mock` and `@MockBean`: <https://stackoverflow.com/questions/44200720/difference-between-mock-mockbean-and-mockito-mock>
+* You can see an example of `@MockBean` being used in this test file: <https://github.com/ucsb-cs48-s20/project-idea-reviewer/blob/master/src/test/java/edu/ucsb/cs48/s20/demo/controllers/AdminControllerTest.java>
