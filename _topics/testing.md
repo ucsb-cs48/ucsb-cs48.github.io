@@ -28,10 +28,40 @@ Here's a bit more on each of these:
 Writing good unit tests has some different conventions from writing production code.  
 * This article discusses some of those: <https://mtlynch.io/good-developers-bad-tests/>
 
+The gist is that unit test should be simple and modular. Each test should focus on some very specific aspect of the function or object you are testing and should not be dependent on any other parts of the application working. 
+* For example, if you were testing a webapp, you might want to test that errors are added to the model when passing an invalid value to a controller action. This controller action might require access to a database or to an authentication service in order to work during runtime, but you want to avoid any reliance on anything that doesn't directly pertain to what you are trying to test. 
+
+* That is, you don't want to check "Are there errors on my model after I authenticate the current user and query the database for this value?" for this unit test. You want to check "Assuming the user is already authenticated and this value does not exist in this database, will the correct errors properly be added to the model?" 
+  * This first scenario is not a unit test- you would essentially be testing that authentication, a particular database query, *and* that the errors are properly added.
+  * The second scenario is a unit test because it is *only* checking that the errors are properly added in a scenario that would cause them to be added. You would achieve this modularity by mocking any services that the test would otherwise rely on- the database and authentication, in this example. (Article on mocking coming soon!)
+
+There is also the idea of self-documenting unit tests. This is where best test-writing practices differ from best development practices. Each test should have a name that thoroughly identifies its purpose, even if it is a really long name. 
+ * For example, a name like `testLogin_nonStudentNotAllowedToLogin` is often preferable to a more concise name like `nonStudentLogin` because it makes the following three things very clear:
+   * Which function is being tested (`login`)
+   * The case that is being checked (a non-student attempting to login)
+   * The expected outcome (they should not be allowed to do so). 
+   
+This way, if the test fails for any reason, it will be easy for anyone to identify the exact details of what is going wrong just from seeing the error message. 
+
+Test code is also a lot more repetitive than production code- you generally don't have helper functions, since you want a reader to see everything that is being set up and used in the body of the test itself. Sometimes you can pull out some setup that is required for every single test to a single set up function that is run before every test, but this should be written in a way that is very clear to any reader. In general, choose readability over efficiency in test code, even if that means more repetition or copy-pasting.
+
+
 Unit tests in JavaScript:
 * <https://areknawo.com/lets-talk-js-unit-testing/>
 
 ## Integration Tests
+
+Integration tests examine how multiple components work with each other. Once you have a thorough set of unit tests, you can be confident that each individual part of your project works well on its own. However, you rarely just have those components working alone, so you need to check that they behave correctly when interacting with one another.
+
+This article discusses the main approaches to integration testing: http://softwaretestingfundamentals.com/integration-testing/
+
+In general for integration testing, you are gradually combining components together to verify that they work properly together, so it is easier to catch errors in specific interactions.
+
+ * For example, if you had three components (A,B,C), you would first look for "interfaces" between those components- places where two components interact. Test each of these interfaces before testing interactions that involve all of the components. 
+   * In this example, say A first passes some information to B, which creates an object with the data and passes the object to C, which saves it to a database. The interfaces here are between (A,B) and (B,C).
+    * When A passes some information to B, make sure that information is received correctly in B, and that B returns the correct type of object with the expected values. If necessary, mock C so that the only "real" interaction that occurs is between A and B. If this test fails, then you know that something went wrong with the information passed from A to B.
+    * Repeat this process with B and C, to make sure that they communicate properly amongst themselves (and that C saves the correct information to the database).
+    * Once each "piece" of the A-B-C interaction is checked, then test interactions that include all 3 components, as they would interact in an actual running app
 
 For integration tests, you may need more than a simple test framework.
 
