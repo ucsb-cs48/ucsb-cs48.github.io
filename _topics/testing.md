@@ -28,7 +28,7 @@ Here's a bit more on each of these:
 Writing good unit tests has some different conventions from writing production code.  
 * This article discusses some of those: <https://mtlynch.io/good-developers-bad-tests/>
 
-The gist is that unit test should be simple and modular. Each test should focus on some very specific aspect of the function or object you are testing and should not be dependent on any other parts of the application working. 
+The gist is that unit tests should be simple and modular. Each test should focus on some very specific aspect of the function or object you are testing and should not be dependent on any other parts of the application working. 
 * For example, if you were testing a webapp, you might want to test that errors are added to the model when passing an invalid value to a controller action. This controller action might require access to a database or to an authentication service in order to work during runtime, but you want to avoid any reliance on anything that doesn't directly pertain to what you are trying to test. 
 
 * That is, you don't want to check "Are there errors on my model after I authenticate the current user and query the database for this value?" for this unit test. You want to check "Assuming the user is already authenticated and this value does not exist in this database, will the correct errors properly be added to the model?" 
@@ -53,7 +53,7 @@ Unit tests in JavaScript:
 
 Integration tests examine how multiple components work with each other. Once you have a thorough set of unit tests, you can be confident that each individual part of your project works well on its own. However, you rarely just have those components working alone, so you need to check that they behave correctly when interacting with one another.
 
-This article discusses the main approaches to integration testing: http://softwaretestingfundamentals.com/integration-testing/
+This article discusses the main approaches to integration testing: <http://softwaretestingfundamentals.com/integration-testing/>
 
 In general for integration testing, you are gradually combining components together to verify that they work properly together, so it is easier to catch errors in specific interactions.
 
@@ -65,7 +65,7 @@ In general for integration testing, you are gradually combining components toget
 
 For integration tests, you may need more than a simple test framework.
 
-For front-end testing of Python Web Apps, for example, or any kind of app built with React:
+For front-end testing of Web Apps, for example, or any kind of app built with React:
 * <https://testdriven.io/blog/modern-frontend-testing-with-cypress/>
 
 ## Acceptance Tests (aka end-to-end tests)
