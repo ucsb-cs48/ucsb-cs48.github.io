@@ -45,6 +45,8 @@ Now within test functions such as [runUserFlowEnd2EndTestWithAuthentication()](h
 * `webDriver.findElement(By.id("submit")).click();` to click a button
 * `assert(webDriver.findElement(By.id("headerText")).getText().equals("Welcome!"));` to assert a certain text field contains the correct value
 
+NOTE: It is highly recommended to reset the database between each test suite. This can be done by adding `properties="spring.datasource.name=xyz"` to the `@SpringBootTest` annotation (where `xyz` is a unique string). An example of this can be seen on [line 28](https://github.com/ucsb-cs48-s20/project-idea-reviewer/blob/master/src/test/java/edu/ucsb/cs48/s20/demo/end2end/UserFlowEnd2EndTest.java#L28). The database will be reloaded based on `data.sql`.
+
 ## End to end testing with NextJS and Cypress
 
 Coming soon
