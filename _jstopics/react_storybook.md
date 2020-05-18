@@ -20,3 +20,23 @@ Here are three examples of React Storybooks, along with the repos from which the
 | []() | []() |
 | []() | []() |
 {:.table .table-sm .table-striped .table-bordered}
+
+
+# Components, Stories, Knobs
+
+Storybook has many features, but the three we will focus on are:
+* Components: You start working with Storybook by adding a React Component to the Storybook.  
+  - You add a component to the story book by adding a source files in the appropriate spot.
+  - "The appropriate spot" depends on how you have your project configured.
+  - In the example storybooks we are providing above, the "appropriate spot" is under `stories`, in a file called
+    `ComponentName.story.js`.
+  - That is a consequence of this line of code in `.storybook/main.js`:
+    ```
+    module.exports = {
+      stories: ["../stories/**/*.stories.js"],
+    ...
+    ```
+* Stories: Stories are the individual items defined inside a `ComponentName.stories.js` file.
+* Knobs: Knobs are controls that allow you to interact with a component to simulate different parameters values being
+  passed in for its `props`.
+    
