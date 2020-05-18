@@ -91,3 +91,54 @@ Then, two individual stories are defined:
 
 * `export const loggedOut = ...` starts the first of the two stories
 * `export const loggedIn = ...` starts the second of the two stories 
+
+
+The first of these two stories does not make use of any knobs.  It is a story that shows what the navigation bar looks like when the user is logged out.  Since there is only one way the screen can look, there is no need for a knob.   The name of the function, `loggedOut` is the name of the story that will appear in the storybook.  All way have to do is reeturn the component:
+
+```
+export const loggedOut = () => {
+  return <AppNavbar />;
+};
+```
+
+The second story is a bit more complex.  When the users is logged in, there are a few things that can affect how the navigation bar looks: 
+* The name of the user
+* The role of the user (admin, student or guest)
+* The url of an image for the user
+
+Each of those is turned into a knob with this code.  This makes a UI element that sets the values to default values, but
+also allows the user to override these values with other ones and see the effect on the React component:
+
+```
+const name = text("Name", "Phill Conrad");
+  const role = select("Role", ["admin", "student", "guest"], "guest");
+  const picture = text(
+    "Image URL",
+    "https://avatars3.githubusercontent.com/u/1119017"
+  );
+```
+
+Then, these values are combined into a value for `user` that can be passsed into the user props of the component:
+```
+  const user = { name, role, picture };
+  return <AppNavbar user={user} />;
+```
+
+That, in a nutshell, is how you write stories for React storybook.
+
+The only other things you need to know are:
+* How to get React Storybook configured in your repo
+* How to run your Storybook on localhost
+* How to get a version of your Storybook deployed on the web using GitHub pages
+
+# How to get React Storybook configured in your repo
+
+TODO
+
+# How to run your Storybook on localhost
+
+TODO
+
+# How to get a version of your Storybook deployed on the web using GitHub pages
+
+TODO
