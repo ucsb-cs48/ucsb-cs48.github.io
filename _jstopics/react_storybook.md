@@ -133,15 +133,43 @@ The only other things you need to know are:
 
 # How to get React Storybook configured in your project repo
 
-This pull requests can be used as a guide to adding Storybook support to your project:
+This pull request can be used as a guide to adding Storybook support to your project:
 
 * <https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial/pull/8>
 
 
 # How to run your Storybook on localhost
 
-TODO
+If you followed the steps listed above then you can run your storybook locally with:
+
+```
+npm run storybook
+```
+
+This should make the storybook available on <http://localhost:6006> as long as you keep that command running.
 
 # How to get a version of your Storybook deployed on the web using GitHub pages
 
-TODO
+To make a version of your storybook that is deployed on GitHub pages:
+
+One time setup:
+
+1.  Create an empty repo that has the same name as your repo, but with `-storybook` at the end.  Clone this repo
+    as a sibling of your repo (i.e. the directories where they are cloned have the same parent directory).
+1.  Edit the `build-storybook` command in `package.json` so that it refers to your new empty repo.  For example:
+    ```
+        "build-storybook": "build-storybook -c .storybook -o ../project-idea-reviewer-nextjs-storybook/docs"
+    ```
+    
+    The part you want to edit is the `../project-idea-reviewer-nextjs-storybook/docs` part.  The `project-idea-reviewer-nextjs-storybook` should be the name of the new empty repo you created.  The `..` part means to go to the parent directory, then down into the sibling directory.  The `/docs` part means that the documentation will be placed into the `/docs` subdirectory in the repo which is how it will get published to GitHub pages.
+1.  Run `npm run build-storybook`
+1.  `cd ../project-idea-reviewer-nextjs-storybook` (or whatever your repo is called)
+1.  Use `git add .` then `git commit -m "publish storybook"`  then `git push origin master`
+1.  Visit the settings for the `-storybook` repo, and scroll down to GitHub pages, and select `publish from master branch /docs`
+1.  Visit the URL shown in the GitHub pages section for your repo, and see the published storybook.
+
+Each time you want to update the repo:
+
+1.  In the directory for your main repo, run `npm run build-storybook`
+1.  `cd ../project-idea-reviewer-nextjs-storybook` (or whatever your repo is called)
+1.  Use `git add .` then `git commit -m "publish storybook"`  then `git push origin master`
