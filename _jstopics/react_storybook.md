@@ -131,9 +131,12 @@ The only other things you need to know are:
 * How to run your Storybook on localhost
 * How to get a version of your Storybook deployed on the web using GitHub pages
 
-# How to get React Storybook configured in your repo
+# How to get React Storybook configured in your project repo
 
-TODO
+This pull requests can be used as a guide to adding Storybook support to your project:
+
+* <https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial/pull/8>
+
 
 # How to run your Storybook on localhost
 
