@@ -15,7 +15,7 @@ Here are three examples of React Storybooks, along with the repos from which the
 |-----------|------------|
 | [project-idea-reviewer-nextjs-storybook](https://ucsb-cs48-s20.github.io/project-idea-reviewer-nextjs-storybook) | [project-idea-reviewer-nextjs](https://github.com/ucsb-cs48-s20/project-idea-reviewer-nextjs) |
 | [cs48-s20-nextjs-tutorial-storybook](https://ucsb-cs48-s20.github.io/cs48-s20-nextjs-tutorial-storybook) | [cs48-s20-nextjs-tutorial](https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial) |
-| [teaching-practices-game-storybook]((https://ucsb-cs48-s20.github.io/teaching-practices-game-storybook) | [teaching-practices-game](https://github.com/ucsb-cs48-s20/teaching-practices-game) |
+| [teaching-practices-game-storybook](https://ucsb-cs48-s20.github.io/teaching-practices-game-storybook) | [teaching-practices-game](https://github.com/ucsb-cs48-s20/teaching-practices-game) |
 | []() | []() |
 | []() | []() |
 | []() | []() |
