@@ -76,4 +76,4 @@ be used.
 <plugin>
 ```	  
 	
-The file `sun_checks.xml` is one that's built into the `checkstyle` product, and is documented here: <https://checkstyle.sourceforge.io/sun_style.html>.    	
+The file `sun_checks.xml` is one that's built into the `checkstyle` product, and is documented here: <https://checkstyle.sourceforge.io/sun_style.html>.  Another option is `google_style.xml` documented here: <https://checkstyle.sourceforge.io/google_style.html>.
