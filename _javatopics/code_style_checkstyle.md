@@ -159,7 +159,7 @@ astyle --style=google --recursive src/\*.java
 Notes: 
 * This will change files in place, saving a backup copy of the original 
   as `filename.orig` (e.g. `Foo.java` becomes `Foo.java.orig`). 
-* Consider adding `.orig` to your `.gitignore` so that you don't end up committing 
+* Consider adding `*.orig` to your `.gitignore` so that you don't end up committing 
   all of the backup files
   produced by `astyle` into your repo.
 * It's advisable to be on a clean version of master, and to do this in a single commit 
