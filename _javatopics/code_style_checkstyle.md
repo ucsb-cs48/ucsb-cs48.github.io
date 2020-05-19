@@ -198,7 +198,6 @@ rules by using the `SupressionFilter` module, as shown here:
    <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
    <module name="SuppressionFilter">
         <property name="file" value="checkstyle/suppressions.xml" />
-        <property name="optional" value="true"/>
     </module>
  ```
     
