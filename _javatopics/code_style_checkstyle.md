@@ -184,7 +184,58 @@ Audit done.
 The next step would be to add in additional rules, one by one, from the [`google_checks.xml`](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml), until you have reached
 full compliance with the Google spec.
 
-# Making Exceptions
+# Making Exceptions for specific rule violations (by line of code)
 
+Occasionally, you may have a good reason for violating one of the Google style rules.
 
+You can indicate that specific lines of code in specific files should be exempted from specific
+rules by using the `SupressionFilter` module, as shown here:
 
+```
+   <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
+   <module name="SuppressionFilter">
+        <property name="file" value="checkstyle/suppressions.xml" />
+        <property name="optional" value="true"/>
+    </module>
+ ```
+    
+This specifies that if the file `checkstyle/supressions.xml` exists, it contains a list of the exceptions
+to the rules you are willing to permit.
+    
+Here is an example of what you might put into `checkstyle/supressions.xml`:
+
+```
+<?xml version="1.0"?>
+ 
+<!DOCTYPE suppressions PUBLIC
+     "-//Checkstyle//DTD SuppressionFilter Configuration 1.0//EN"
+     "https://checkstyle.org/dtds/suppressions_1_0.dtd">
+ 
+<suppressions>
+  <suppress checks="FileTabCharacter"
+             files="Foo.java"
+             lines="71-75,89"/>
+  <suppress checks="FileTabCharacter"
+             files="Bar.java"
+             lines="71-75,89"/>
+</suppressions>
+```
+
+# Making blanket exceptions for filename patterns
+
+You can also specify exceptions to the rules by filename pattern.
+
+For example, the sample `google_check.xml` includes these lines
+which use the `[BeforeExecutionFileFilter`](https://checkstyle.org/config_filefilters.html#BeforeExecutionExclusionFileFilter) to indicate
+that the rules should be ignored for any file with a name that ends in `module-info.java`
+
+Note that the `fileNamePattern` parameter is a regular expression, hence the need for the `\`
+characters in front of `-` and `.` and the need for the `$` to indicate the end of the expression.
+
+```
+   <!-- Excludes all 'module-info.java' files              -->
+   <!-- See https://checkstyle.org/config_filefilters.html -->
+   <module name="BeforeExecutionExclusionFileFilter">
+        <property name="fileNamePattern" value="module\-info\.java$"/>
+   </module>
+```
