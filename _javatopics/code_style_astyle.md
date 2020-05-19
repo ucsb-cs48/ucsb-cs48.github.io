@@ -7,6 +7,8 @@ Artistic Style (command line: `astyle`) is a tool to format Java code (i.e. fix 
 
 It also works on: C, C++, C++/CLI, Objective‑C, and C#.
 
+Documentation: <http://astyle.sourceforge.net/>
+
 # Quick start: `astyle *.java`
 
 Type `astyle *.java` at the command line on CSIL to use a software package called "Artistic Style" to automatically fix the
@@ -49,12 +51,19 @@ For example:
 
 
 
+# Available on CSIL
 
+`astyle` is available on CSIL.    Even if you do no other development on CSIL, you can use `git clone` to clone your repo,
+use `astyle` to apply changes, and then commit those changes.
 
-# Install on Mac
+# Install on Mac using homebrew
 
 To install on Mac, first install [MacOS: Homebrew](/topics/macos_homebrew/), then type:
 
 ```
 brew install astyle
 ```
+
+# Installation of astyle by other means
+
+See: <http://astyle.sourceforge.net/install.html>
