@@ -150,15 +150,41 @@ Fortunately, fixing these is straightforward using another tool called `astyle`,
 
 In fact, astyle can be used to automatically fix quite a few style issues required by the Google code style for
 java(<https://google.github.io/styleguide/javaguide.html>).   If you have astyle installed, you can simply run
-this command to fix all files under `src`.   
+this command to fix all `.java` files under `src`.   
 
 Note: it's advisable to be on a clean version of master, and to do this in a single commit and pull request;
 you don't want to have to code review "substantive" changes in the same PR as a massive reformatting.
 
 ```
-astyle --style=google --recursive src
+astyle --style=google --recursive src/\*.java
 ```
 
-Since the line `<property name="fileExtensions" value="java, properties, xml"/>` indicates that all `.xml` files and `.properties` files are also checked, we may also want to run this on `*.xml` and `*.properties` in the main directory:
+Since the line `<property name="fileExtensions" value="java, properties, xml"/>` indicates that all `.xml` files and `.properties` files are also checked, we may also want to run this on `*.xml` and `*.properties` in and under the main directory:
+
+```
+astyle --style=google --recursive ./\*.properties
+astyle --style=google --recursive ./\*.xml
+```
+
+After using astyle to make this transformation, running `mvn checkstyle:check` with the options above  reports no violations:
+
+```
+% mvn checkstyle:check
+...
+[INFO] --- maven-checkstyle-plugin:3.1.1:check (default-cli) @ demo-spring-google-oauth-app ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+...
+% 
+```
+
+The next step would be to add in additional rules, one by one, from the [`google_checks.xml`](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml), until you have reached
+full compliance with the Google spec.
+
+# Making Exceptions
+
 
 
