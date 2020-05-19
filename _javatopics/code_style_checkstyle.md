@@ -152,19 +152,22 @@ In fact, astyle can be used to automatically fix quite a few style issues requir
 java(<https://google.github.io/styleguide/javaguide.html>).   If you have astyle installed, you can simply run
 this command to fix all `.java` files under `src`.   
 
-Note: it's advisable to be on a clean version of master, and to do this in a single commit and pull request;
-you don't want to have to code review "substantive" changes in the same PR as a massive reformatting.
-
 ```
 astyle --style=google --recursive src/\*.java
 ```
 
-Since the line `<property name="fileExtensions" value="java, properties, xml"/>` indicates that all `.xml` files and `.properties` files are also checked, we may also want to run this on `*.xml` and `*.properties` in and under the main directory:
+Notes: 
+* This will change files in place, saving a backup copy of the original 
+  as `filename.orig` (e.g. `Foo.java` becomes `Foo.java.orig`). 
+* Consider adding `.orig` to your `.gitignore` so that you don't end up committing 
+  all of the backup files
+  produced by `astyle` into your repo.
+* It's advisable to be on a clean version of master, and to do this in a single commit 
+  and pull request;
+  you don't want to have to code review "substantive" changes in the same PR as a massive reformatting.
+ 
 
-```
-astyle --style=google --recursive ./\*.properties
-astyle --style=google --recursive ./\*.xml
-```
+Note that the line `<property name="fileExtensions" value="java, properties, xml"/>` indicates that all `.xml` files and `.properties` files are also checked: *however, astyle does not work on `.properties` and `.xml` files*. So you will have to find other ways to get those files to comply with the Google checks, such as using the automatic formatting plugins  built into editors such as VSCode.
 
 After using astyle to make this transformation, running `mvn checkstyle:check` with the options above  reports no violations:
 
@@ -201,8 +204,23 @@ rules by using the `SupressionFilter` module, as shown here:
     
 This specifies that if the file `checkstyle/supressions.xml` exists, it contains a list of the exceptions
 to the rules you are willing to permit.
-    
-Here is an example of what you might put into `checkstyle/supressions.xml`:
+
+As an example, suppose you got these errors when running `mvn checkstyle:check`:
+
+```
+[INFO] Starting audit...
+[ERROR] /Users/pconrad/github/ucsb-cs48-s20/project-idea-reviewer/src/main/java/edu/ucsb/cs48/s20/demo/Application.java:9:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /Users/pconrad/github/ucsb-cs48-s20/project-idea-reviewer/src/main/java/edu/ucsb/cs48/s20/demo/Application.java:10:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /Users/pconrad/github/ucsb-cs48-s20/project-idea-reviewer/src/main/java/edu/ucsb/cs48/s20/demo/Application.java:11:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /Users/pconrad/github/ucsb-cs48-s20/project-idea-reviewer/src/main/java/edu/ucsb/cs48/s20/demo/Application.java:12:1: Line contains a tab character. [FileTabCharacter]
+[ERROR] /Users/pconrad/github/ucsb-cs48-s20/project-idea-reviewer/src/main/java/edu/ucsb/cs48/s20/demo/Application.java:22:1: Line contains a tab character. [FileTabCharacter]
+Audit done
+```
+
+Suppose that for some reason, you *really, really* wanted those particular tab characters to stay just as they are,
+and *not* be reported as a style violation.
+
+Here is an example of what you might put into `checkstyle/supressions.xml` to indicate this:
 
 ```
 <?xml version="1.0"?>
@@ -213,11 +231,8 @@ Here is an example of what you might put into `checkstyle/supressions.xml`:
  
 <suppressions>
   <suppress checks="FileTabCharacter"
-             files="Foo.java"
-             lines="71-75,89"/>
-  <suppress checks="FileTabCharacter"
-             files="Bar.java"
-             lines="71-75,89"/>
+             files="Application.java"
+             lines="9-12,22"/>
 </suppressions>
 ```
 
