@@ -49,7 +49,7 @@ We'll go over the steps in more detail here.
 mvn -N io.takari:maven:0.7.7:wrapper
 ```
 
-Then add the wrapper downloader files to your repo (they must be part of the source code that is updated to Heroku so the wrapper can be installed and the commands can be properly run):
+Then add the wrapper downloader files to your repo (they must be part of the source code that is deployed to Heroku so the wrapper can be installed and the commands can be properly run):
 ```
 git add mvnw .mvn
 ```
@@ -80,7 +80,7 @@ Putting it all together, a typical migration file name would look something like
 V1_0__create_customer_table.sql
 ```
     
-If you don't follow the naming convention precisely (inserting an underscore between prefix and version, or not using a double underscore to separarte the name), then the migration will fail to run.
+If you don't follow the naming convention precisely (inserting an underscore between prefix and version, or not using a double underscore to separate the name), then the migration will fail to run.
 
 The body of a migration file might look look something like this (just a SQL command):
 ```
@@ -93,17 +93,17 @@ CREATE TABLE IF NOT EXISTS customer(
 
 ## Running migrations on Heroku
 
-Now that you have the dependencies, wrapper, and migrations in their proper places, all that remains to make sure these migrations are actually run on Heroku in the release phase. If you don't already have one, you will need to add a `Procfile` to the root of your project repo (at the same level as your pom.xml). The Procfile is a Heroku-specific file that lists actions for the app to execute at various stages. It is simply called `Procfile`- capital P and no file extension. You can read more about it here: <https://devcenter.heroku.com/articles/procfile>.
+Now that you have the dependencies, wrapper, and migrations in their proper places, all that remains is to make sure these migrations are actually run on Heroku in the release phase. If you don't already have one, you will need to add a `Procfile` to the root of your project repo (at the same level as your pom.xml). The Procfile is a Heroku-specific file that lists actions for the app to execute at various stages. It is simply called `Procfile`- capital P and no file extension. You can read more about it here: <https://devcenter.heroku.com/articles/procfile>.
 
-In the Procfile, we will use the following command to specify that we want the app to use the Maven Wrapper to run the flyway migrate command in the release phase, which will trigger the latest migrations:
+In the Procfile, we will use the following command to specify that we want the app to use the Maven Wrapper to run the Flyway migrate command in the release phase, which will trigger the latest migrations:
 ```
 release: ./mvnw flyway:migrate
 ```
 If you have existing tables in your app's database at the time when you add your first migration, you might encounter a problem when you push this code to your repo and try to deploy. Flyway will detect that the schema (state of the database) it is starting from is not empty, and you will likely see an error like `Found non-empty schema(s) without schema history table! Use baseline() or set baselineOnMigrate to true to initialize the schema history table.` in your release logs before the release fails. 
 
-This means that you need to indicate to Flyway that you want the current state of your database (with its existing tables) the be marked as the "baseline", so it can build on top of it. This blog was useful reading about this error: <https://dzone.com/articles/build-deploy-and-monitor-an-express-application-on>. 
+This means that you need to indicate to Flyway that you want the current state of your database (with its existing tables) to be marked as the "baseline", so it can build on top of it. This blog was useful reading about this error: <https://dzone.com/articles/build-deploy-and-monitor-an-express-application-on>. 
 
-The official way to resolve this is to add the line `spring.flyway.baseline-on-migrate: true` to your `applications.properties` (or `application.yml`) file. I had some problems with this approach, so I incorporated the command-line version of the baseline command into the release command. So, if you are still running into the baseline error even after adding that line to your `application.properties  ` and redeploying, you can try changing the release line in your Procfile to this:
+The official way to resolve this is to add the line `spring.flyway.baseline-on-migrate: true` to your `applications.properties` (or `application.yml`) file. I had some problems with this approach, so I incorporated the command-line version of the baseline command into the release command. So, if you are still running into the baseline error even after adding that line to your `application.properties` and redeploying, you can try changing the release line in your Procfile to this:
 ```
 release: ./mvnw flyway:baseline; ./mvnw flyway:migrate
 ```
