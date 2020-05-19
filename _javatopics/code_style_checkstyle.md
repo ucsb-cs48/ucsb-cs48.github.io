@@ -187,6 +187,40 @@ Audit done.
 The next step would be to add in additional rules, one by one, from the [`google_checks.xml`](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml), until you have reached
 full compliance with the Google spec.
 
+# Fixing problems manually
+
+One option for fixing problems is to use a program such as `astyle` to make blanket changes.
+
+But sometimes, there is a better way.
+
+For example, consider this section of code which violated the Google style rule of no code past column 100:
+
+```java
+                redirAttrs.addFlashAttribute("alertDanger", "Admin " + email + " was set from application properties and cannot be deleted.");
+```
+
+One way to fix this line is to try to put line breaks into it.  But perhaps a better way is to factor out the message onto a separate line of code, using a variable:
+
+```java
+                String message = "Admin " + email +
+                                 " was set from application properties and cannot be deleted.";
+                redirAttrs.addFlashAttribute("alertDanger", message);
+```
+
+You will need to decide on a strategy.  Line length is tricky, because `astyle` uses `max-code-length` (which does not count white space indentation) while the Google Style guide (and `checkstyle`) works only with the total line length (including prefixed white space.)   So if you are trying to enforce a line-length of 100, per the Google style guide, you may need to use something like:
+
+```
+astyle --max-code-length=90 --recursive src/\*.java
+```
+
+A value or `90` or `80` may reduce the number of violations to a level that you can then start inspecting by hand to see what the best strategy is.
+
+# Working with Google Style in IDEs
+
+It can be challenging to maintain your code in good Google Style if your IDE is fighting you, i.e. if it's own style formatting has a different conception of "what the rules are".
+
+You may want to look into whether you can find a plugin for your IDE that is consistent with the style rules you are enforcing in your project.   If you use only rules that are a subset of the Google Style guide, then you can look for plugins that are Google Style guide compliant.
+
 # Making Exceptions for specific rule violations (by line of code)
 
 Occasionally, you may have a good reason for violating one of the Google style rules.
