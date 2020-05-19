@@ -2,7 +2,7 @@
 topic: "Testing: cypress"
 desc: "End to end testing of Javascript web applications"
 category_prefix: "Testing: "
-indent: 
+indent: true
 ---
 
 
