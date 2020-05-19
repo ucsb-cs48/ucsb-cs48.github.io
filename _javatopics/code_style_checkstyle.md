@@ -76,4 +76,31 @@ be used.
 <plugin>
 ```	  
 	
-The file `sun_checks.xml` is one that's built into the `checkstyle` product, and is documented here: <https://checkstyle.sourceforge.io/sun_style.html>.  Another option is `google_style.xml` documented here: <https://checkstyle.sourceforge.io/google_style.html>.
+The file `sun_checks.xml` is one that's built into the `checkstyle` product, and is documented here: <https://checkstyle.sourceforge.io/sun_style.html>.  
+	
+Another option is `google_style.xml` documented here: <https://checkstyle.sourceforge.io/google_checks.html>.
+You can swap out `sun_checks.xml` for `google_checks.xml` and get a different report.  
+	
+One major difference
+between the two is that while the `sun_checks.xml` file results in blocking errors, the `google_checks.xml` file
+results only in warnings.
+	
+Both `sun_checks.xml` and `google_checks.xml` can be specified without adding an additional file beyond adding
+the plugin to the `pom.xml`.  However, you can also download a copy of either of these files and then tailor it 
+to your own needs and preferences.
+	
+The originals of these files can be found in the GitHub repo for `checkstyle` here:
+* <https://github.com/checkstyle/checkstyle/tree/master/src/main/resources>
+	
+Copy one of these files into the main directory of your repo (or, if you prefer, under a `checkstyle` direcctory, e.g.
+`checkstyle/checks.xml`) and specify that file, e.g.     
+```	
+	<configLocation>checkstyle/checks.xml</configLocation>
+```	
+
+Start with the total contents of one of the files, and then you can start editing down (or commenting out) the rules
+to a minimal, manageable, set.  For example, here is a minimal version that started with `google_checks.xml`:
+
+```
+```
+	
