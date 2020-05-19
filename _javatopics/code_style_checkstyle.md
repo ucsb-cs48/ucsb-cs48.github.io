@@ -253,3 +253,11 @@ characters in front of `-` and `.` and the need for the `$` to indicate the end 
         <property name="fileNamePattern" value="module\-info\.java$"/>
    </module>
 ```
+
+# Another options for putting code in Google Style
+
+Another option for addressing code style issues is 
+* <https://github.com/google/google-java-format>
+
+Note that this option is not configurable:
+> Note: There is no configurability as to the formatter's algorithm for formatting. This is a deliberate design decision to unify our code formatting on a single format.
