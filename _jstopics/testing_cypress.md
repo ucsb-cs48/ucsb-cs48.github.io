@@ -135,8 +135,54 @@ Here is a run down of the individual steps:
    This is indeed just an *empty JSON object*.   There may be circumstances later where you may need to
    put stuff into this JSON object to configure cypress in various ways, but for now, the existence of this
    empty object is sufficient to get started.
+
+4. Create the following files under the directories indicated:
+
+   Under `cypress/plugins/index.js`:
+
+   ```
+   // See: https://on.cypress.io/plugins-guide
+   module.exports = (on, config) => {};
+   ```
    
-4. Create a directory `cypress` in the main directory of the repo.  Then create `cypress/integration`, and under that
+   Under `cypress/support/commands.js`:
+
+   ```
+   // See: https://on.cypress.io/custom-commands
+   ```
+   
+   Under `cypress/support/index.js`
+
+   ```
+   // See: https://on.cypress.io/configuration
+   import "./commands";
+   import "@rckeller/cypress-unfetch";
+   ```
+
+5. In `package.json` you'll need to add lines in a few places.
+
+   Under `scripts`, add these lines if they don''t already exist.  Note that some of them may already 
+   be there, in which case, don't duplicate them.
+
+   ```
+      "cy:run": "cypress run",
+      "test": "npm-run-all test:*",
+      "test:cypress": "start-server-and-test dev 3000 cy:run"
+   ```
+
+   Then, under `devdependencies`, add these lines.  Again, check for duplication; don't duplicate 
+   any lines that already appear.
+   
+   ```
+    "@rckeller/cypress-unfetch": "^1.0.1",
+    "cypress": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "start-server-and-test": "^1.10.11"
+   ```
+
+6. Create a directory `cypress` in the main directory of the repo.  Then create `cypress/integration`, and under that
    add a file `home.spec.js` with your first cypress test.  Note that if the home page of your application
    does NOT have a `<nav class="navbar">` element on it, then you'll want to replace the test with one that makes
    more sense for your particular app.
@@ -160,8 +206,11 @@ Here is a run down of the individual steps:
    });
    ```
    
-5.    
-   
+7. Run `npm install` to install your new `devdependencies`.
+8. Try running `npm test:cypress` for the first time.
+
+You should see that your first cypress tests runs, and with luck, also passes.
+
 # Getting Authentication / Authorization / Roles to work
 
 TODO: WRITE THIS
