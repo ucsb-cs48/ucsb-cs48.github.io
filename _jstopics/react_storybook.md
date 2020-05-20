@@ -134,8 +134,55 @@ The only other things you need to know are:
 
 This pull request can be used as a guide to adding Storybook support to your project:
 
-* <https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial/pull/8>
 
+
+Here's a rundown of what needs to be done, (since some folks didn't seem to get it from reading the pull request.)
+
+You need the file `.babelrc` with these contents:
+
+```
+{
+  "presets": ["next/babel"]
+}
+```
+
+You need the files `main.js` and `preview.js` under `.storybook` as in this repo:
+
+* <https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial/tree/master/.storybook>
+
+
+You need to make several changes in your `package.json`.
+
+Those include these lines under `scripts` (replace `cs48-s20-nextjs-tutorial-storybook` with the name
+of the `-storybook` repo where you will publish your storybook on GitHub pages; because of the `../`,
+this *must* be a sibling of your project repo.
+
+
+```
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -c .storybook -o ../cs48-s20-nextjs-tutorial-storybook/docs"```
+```
+
+You also needs these lines in `devdependencies`:
+
+```
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-a11y": "^5.3.18",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-storysource": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "terser-webpack-plugin": "^2.3.5"
+```
+
+Finally, you should also add the commands into the documentation in your README.md,
+as was done in this PR:
+
+* <https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial/pull/8>
 
 # How to run your Storybook on localhost
 
