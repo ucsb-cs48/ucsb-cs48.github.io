@@ -134,6 +134,7 @@ The only other things you need to know are:
 
 This pull request can be used as a guide to adding Storybook support to your project:
 
+* <https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial/pull/8>
 
 
 Here's a rundown of what needs to be done, (since some folks didn't seem to get it from reading the pull request.)
