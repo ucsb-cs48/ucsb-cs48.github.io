@@ -211,6 +211,30 @@ Here is a run down of the individual steps:
 
 You should see that your first cypress tests runs, and with luck, also passes.
 
+# Do you need to do anything else?
+
+If all of the functions that you want to test meet the following criteria, then the steps above may
+be sufficient for your needs:
+
+* The tests you are running do not require the user to login (e.g. via Auth0).
+* The tests you are running do not require the user to have a specific "role" in your app (e.g.
+  being a regular user vs. being an admin).
+* The tests do not involve updating the database in any particular way; either there is no database,
+  or the database only contains fixed data that is not updated or changed during the test.
+ 
+If that's where you are, you are ready to continue writing Cypress tests just based on the setup
+you already have.  The documentation at: <https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell> should
+be sufficient to guide you through the process.
+ 
+On the other hand:
+
+* If you *do* need the user to be logged in or have a specific role, then you'll need to
+  consult the additional information below on how to set up mock authentication for your app.
+* If your tests will be updating the database, you'll need the database to start in a known
+  predictable state at the start of each of your test runs.  For that, consult the information 
+  in the section "Resetting the Database" below.
+
+
 # Getting Authentication / Authorization / Roles to work
 
 TODO: WRITE THIS
