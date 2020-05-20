@@ -93,8 +93,75 @@ However, we have workable solutions to these problems, which we will also explai
 
 # Getting Cypress into your Project
 
-TODO: WRITE THSI
+The following PR illustrates how to add cypress testing to a project:
 
+* <https://github.com/ucsb-cs48-s20/cs48-s20-nextjs-tutorial/pull/3/files>
+
+Here is a run down of the individual steps:
+
+1. Add these lines to your `.gitignore`
+   ```
+   cypress/screenshots
+   cypress/videos
+   ```
+   
+   These directories are used by cypress to store screenshots and videos of your tests as they run.  You can use these
+   to try to figure out "what went wrong" (or "what went right") in your tests.  But these are files created on the fly
+   as you run cypress tests, not files that you want to commmit to your repo.
+ 
+2. If your README.md has a table of commands to run the code, such as this one:
+
+   ```
+   | Command                | Description                                  |
+   | ---------------------- | -------------------------------------------- |
+   | `npm install`          | Install Dependencies                         |
+   | `npm run dev`          | Runs locally                                 |
+   ```
+
+   then you'll want to add these two lines to the table so that the commands to run
+   tests are documented.
+   
+   ```
+   | `npm run test`         | Runs entire test suite                       |
+   | `npm run test:cypress` | Runs Cypress integration tests               |
+   ```
+   
+3. In the main directory, add a file `cypress.json` with the following contents:
+
+   ```
+   {}
+   ```
+   
+   This is indeed just an *empty JSON object*.   There may be circumstances later where you may need to
+   put stuff into this JSON object to configure cypress in various ways, but for now, the existence of this
+   empty object is sufficient to get started.
+   
+4. Create a directory `cypress` in the main directory of the repo.  Then create `cypress/integration`, and under that
+   add a file `home.spec.js` with your first cypress test.  Note that if the home page of your application
+   does NOT have a `<nav class="navbar">` element on it, then you'll want to replace the test with one that makes
+   more sense for your particular app.
+   
+   For example, if your page has an element `<h1>Dog Sitter App</h1>`, you could 
+   * change `"has a nav bar"` to `"has an h1 containing Dog Sitter App"`
+   * change  `cy.get("nav.navbar").should("exist");` to `cy.get("h1").should('have.text', 'Dog Sitter App');`
+   
+   ```
+   describe("Home Page", () => {
+     beforeEach(() => {
+       // runs before each test in the block
+       cy.visit("http://localhost:3000");
+     });
+
+     it("has a nav bar", () => {
+       // a nav element with class navbar
+       cy.get("nav.navbar").should("exist");
+     });
+
+   });
+   ```
+   
+5.    
+   
 # Getting Authentication / Authorization / Roles to work
 
 TODO: WRITE THIS
