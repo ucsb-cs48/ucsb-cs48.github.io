@@ -383,39 +383,38 @@ The first three commands are implemented by setting a cookie called `AUTH` to ha
 
 <table class="{table table-sm table-striped table-bordered">
 <thead>
-  <tr>
-    <th><code>../fixtures/adminUser.json</code></th>
-    <th><code>../fixtures/studentUser.json</code></th>
-    <th><code>../fixtures/guestUser.json</code></th>
-  </tr>
+<tr>
+<th><code>../fixtures/adminUser.json</code></th>
+<th><code>../fixtures/studentUser.json</code></th>
+<th><code>../fixtures/guestUser.json</code></th>
+</tr>
 </thead>
-  <tbody>
-    <tr>
-      <td>
-        <pre>
+<tbody>
+<tr>
+<td>
+<pre>
 {
   "name": "Example Admin",
   "email": "admin@example.com"
 }
-        </pre>
-      </td>
-
-      <td>
-        <pre>
+</pre>
+</td>
+<td>
+<pre>
 {
   "name": "Example Student",
   "email": "student@example.com"
 }
-        </pre>
-      </td>
-      <td>
-        <pre>
+</pre>
+</td>
+<td>
+<pre>
 {
   "name": "Example Guest",
   "email": "guest@example.com"
 }
-        </pre>
-      </td> 
- </tr>
-  </tbody>
+</pre>
+</td> 
+</tr>
+</tbody>
 </table>
