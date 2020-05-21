@@ -345,4 +345,77 @@ For guests, the test is similar, so it is not shown.
 
 ## The custom commands we need
 
+The custom commands we need in order to support these tests are these:
 
+* `cy.prepareDatabase()`, which is called in a `before` action at the top of an entire test suite file (e.g. at the top of each of these files to reset the test database to a known, predictable state:
+   - `cypress/integration/auth.spec.js`
+   - `cypress/integration/admin.spec.js`
+   - `cypress/integration/home.spec.js`
+   - `cypress/integration/student.spec.js`
+   - and any future `*.spec.js` files added under `cypress/integration`
+* `cy.loginAsAdmin();`, `cy.loginAsStudent();` and `cy.loginAsGuest();`, each of which is called in a `beforeEach()` at the top of a `context` block for tests run as an admin, student, or guest user, respectively.
+
+The custom commands are defined in the file: `cypress/support/commands.js`, which is shown here:
+
+```
+import adminUser from "../fixtures/adminUser.json";
+import studentUser from "../fixtures/studentUser.json";
+import guestUser from "../fixtures/guestUser.json";
+
+Cypress.Commands.add("loginAsAdmin", () =>
+  cy.setCookie("AUTH", JSON.stringify(adminUser))
+);
+Cypress.Commands.add("loginAsStudent", () =>
+  cy.setCookie("AUTH", JSON.stringify(studentUser))
+);
+Cypress.Commands.add("loginAsGuest", () =>
+  cy.setCookie("AUTH", JSON.stringify(guestUser))
+);
+
+Cypress.Commands.add("prepareDatabase", () => {
+  cy.visit("http://localhost:3000/testhooks");
+  cy.get("button").contains("Prepare Database").click();
+  cy.get("span").contains("Database has been reset; ready to run tests.");
+});
+```
+
+The first three commands are implemented by setting a cookie called `AUTH` to have the contents of *fixtures*, which are data structures used for testing.  The fixtures are in the directory `cypress/fixtures/`, and contain the JSON for three different cases of users.  The data placed in the cookie simulates the same data that *would have been placed there by Auth0* if real authentication were being used.
+
+<table class="{table table-sm table-striped table-bordered">
+<thead>
+  <tr>
+    <th><code>../fixtures/adminUser.json</code></th>
+    <th><code>../fixtures/studentUser.json</code></th>
+    <th><code>../fixtures/guestUser.json</code></th>
+  </tr>
+</thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre>
+{
+  "name": "Example Admin",
+  "email": "admin@example.com"
+}
+        </pre>
+      </td>
+
+      <td>
+        <pre>
+{
+  "name": "Example Student",
+  "email": "student@example.com"
+}
+        </pre>
+      </td>
+      <td>
+        <pre>
+{
+  "name": "Example Guest",
+  "email": "guest@example.com"
+}
+        </pre>
+      </td> 
+ </tr>
+  </tbody>
+</table>
