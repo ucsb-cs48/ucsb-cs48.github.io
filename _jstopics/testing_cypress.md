@@ -418,3 +418,11 @@ The first three commands are implemented by setting a cookie called `AUTH` to ha
 </tr>
 </tbody>
 </table>
+
+The final commmand, `prepareDatabase` is set up to interact with an endpoint called `http://localhost:3000/testhooks`.  At this endpoint, we expect to see a button labelled `Prepare Database`.  When we click on this button, we expect to see the text `Database has been reset; ready to run tests.`.
+
+As we'll see later, this page and this button are only available in the app when the `USE_TEST_AUTH` 
+
+The button `Prepare Database`, when pressed, sends a `POST` message to an API endpoint called `/api/testhooks/prepareDatabase`, which, when `USE_TEST_AUTH` is enabled, will run code that cleans out all of the collections in the database, and then inserts into the `users` collection only the minimal database records needed so that the `cy.loginsAdmin()` and `cy.loginAsStudent()` commands will work.  (Note that by definition, nothing needs to be in the database to support the `cy.loginAsGuest()` command.)   That api endpoint returns an error if `USE_TEST_AUTH` is not enabled; as a result, if someone tries to post to the endpoint in the production app, the `POST` is simply rejected.
+
+It should be noted that it was, strictly speaking, *not necessary* nor even good practice to make a UI element for this endpoint.   As the cypress documentation notes, 
