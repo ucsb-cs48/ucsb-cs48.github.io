@@ -248,5 +248,101 @@ in the repo:
 
 * <https://github.com/ucsb-cs48-s20/project-idea-reviewer-nextjs>
 
-CONTINUE FROM HERE...
+The following pull request details steps that we took to put in place a scheme for
+* mocking authenticated users
+* resetting the database to a known state via an endpoint.
+
+<https://github.com/ucsb-cs48-s20/project-idea-reviewer-nextjs/pull/45/files>
+
+This is a complex pull request involving changes to 28 files, so it isn't particularly easy to summarize, but we'll try to do our best.
+
+## Examples of Tests we want to support
+
+Perhaps it's best to start with what we were trying to accomplish in the first place.   Here is the start of a cypress test suite that tests admin functions, that is functions that are only available to an `admin` user of the app.
+
+An admin user is defined as one that has an entry in MongoDB database, in the `users` collection, with `"role" : "admin"`.  The user is identified by their email address.  For example:
+
+```json
+{
+  "email": "cgaucho@ucsb.edu",
+  "role": "admin"
+}
+```
+
+The test suite `cypress/integration/admin.spec.js` starts like this:
+
+```
+describe("Admin Page", () => {
+  before(() => {
+    cy.prepareDatabase();
+  });
+  context("When I am logged in as an admin", () => {
+    beforeEach(() => {
+      cy.loginAsAdmin();
+      cy.visit("http://localhost:3000/admin/admins");
+    });
+    it("shows me admin navbar options", () => {
+      cy.get(".navbar-nav").contains("Ideas");
+      cy.get(".navbar-nav").contains("Admin");
+    });
+    it("shows me a admin table", () => {
+      cy.get("table");
+    });
+```
+
+Taking this a bit at a time, we see that in the code below, there is a `before` action that calls `cy.prepareDatabase();`.  This is a custom cypress command (i.e. one that we've written ourselves) that sends messages to the application to say: please reset the database to a known state for testing.    As we'll see later, this command will fail unless the environment variable `USE_TEST_AUTH` is set.    The `USE_TEST_AUTH` environment variable is used to indicate that we want to use "test authentication" instead of real authentication, and that we want to use a test instance of the MongoDB database instead of the real one.
+
+```
+describe("Admin Page", () => {
+  before(() => {
+    cy.prepareDatabase();
+  });
+```  
+
+The next bit of code shown below sets a context for a set of test that are run when logged in as an admin.  There is a `beforeEach` action that runs another custom cypress command (one that we've written ourselves) that puts the application in a state "as if" the current user has logged in as an admin.   This runs before each test in this section:
+
+```
+  context("When I am logged in as an admin", () => {
+    beforeEach(() => {
+      cy.loginAsAdmin();
+      cy.visit("http://localhost:3000/admin/admins");
+    });
+``` 
+
+This is followed by a series of tests that depend on the context of being logged in as an admin.  They are expected to pass in that context.  For example:
+
+```
+    it("shows me admin navbar options", () => {
+      cy.get(".navbar-nav").contains("Ideas");
+      cy.get(".navbar-nav").contains("Admin");
+    });
+    it("shows me a admin table", () => {
+      cy.get("table");
+    });
+    ...
+```
+
+Later on, there are two other context blocks that show the other roles: the role of a student user (a user that has an email that appears in the student table), and a guest user (a user with an email that is in neither the admin table, nor the student table.)
+
+Each of these also starts with a custom cypress command that sets up the type of user:
+
+For students, it tests that trying to visit the admin page simply redirects the user to the home page:
+
+```
+   context("When I am logged in as a student", () => {
+    beforeEach(() => {
+      cy.loginAsStudent();
+      cy.visit("http://localhost:3000/admin/admins");
+    });
+
+    it("cannot visit the admin page", () => {
+      cy.url().should("eq", "http://localhost:3000/");
+    });
+  });
+```
+
+For guests, the test is similar, so it is not shown.
+
+## The custom commands we need
+
 
