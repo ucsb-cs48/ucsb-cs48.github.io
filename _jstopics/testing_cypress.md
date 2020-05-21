@@ -427,4 +427,10 @@ The button `Prepare Database`, when pressed, sends a `POST` message to an API en
 
 It should be noted that it was, strictly speaking, *not necessary* nor even good practice to make a UI element for this endpoint.   As the cypress documentation notes, it is [not a best practice to use the UI to set up state for a test](https://docs.cypress.io/guides/getting-started/testing-your-app.html#Bypassing-your-UI).   Instead, we could have implemented the `cy.prepareDatabase()` command by simply using `cy.request()` to directly interact with the `/api/testhooks/prepareDatabase` endpoint, doing the appropriate `POST` request, and checking the status code.   (Refactoring that to be in line with best practices is left as an exercise for later students and/or course staff.)
 
+## Additional Changes
 
+TODO: Document the additional changes needed to get this working, including but not limited to:
+
+* changes involving `USE_TEST_AUTH` in both the code and the `package.json`
+* changes involing `MONGODB_URI_TEST`
+* changes to `utils/api.js` and `utils/ssr.js`, and addition of `utils/testAuth.js`
