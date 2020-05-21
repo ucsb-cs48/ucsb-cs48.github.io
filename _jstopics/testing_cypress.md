@@ -232,16 +232,21 @@ On the other hand:
   consult the additional information below on how to set up mock authentication for your app.
 * If your tests will be updating the database, you'll need the database to start in a known
   predictable state at the start of each of your test runs.  For that, consult the information 
-  in the section "Resetting the Database" below.
+  in the section below.
 
 
-# Getting Authentication / Authorization / Roles to work
+# Authentication / Authorization / Roles, and Resetting the Database
 
-TODO: WRITE THIS
+In order to write cypress tests that depend on the user being logged in with a particular role, especially when the authentication is delegated to a service such as Auth0 or another OAuth provider, we would either have to
+* (a) hard code username / passwords of real users into our cypress tests (not advisable)
+* (b) find a way to "get the appllication into the same state as if" a real user had logged in and had authenticated.
 
-# Resetting the database
+As it turns out that also depends on having the database in a certain stated.
 
-TODO: WRITE THIS
+The code in this section depends on a particular application architecture, one that is illustrated 
+in the repo:
 
+* <https://github.com/ucsb-cs48-s20/project-idea-reviewer-nextjs>
 
+CONTINUE FROM HERE...
 
