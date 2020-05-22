@@ -49,4 +49,4 @@ NOTE: It is highly recommended to reset the database between each test suite. Th
 
 ## End to end testing with NextJS and Cypress
 
-Coming soon
+See: <https://ucsb-cs48.github.io/jstopics/testing_cypress/>
