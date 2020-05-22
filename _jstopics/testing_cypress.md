@@ -207,7 +207,7 @@ Here is a run down of the individual steps:
    ```
    
 7. Run `npm install` to install your new `devdependencies`.
-8. Try running `npm test:cypress` for the first time.
+8. Try running `npm run test:cypress` for the first time.
 
 You should see that your first cypress tests runs, and with luck, also passes.
 
