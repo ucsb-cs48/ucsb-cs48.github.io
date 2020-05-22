@@ -5,6 +5,29 @@ category_prefix: "Spring Boot: "
 indent: true
 ---
 
+# When do you need a migration?
+
+If your app is already set up with migrations, and you are:
+* adding, renaming or deleting a table to your database (i.e. an `@Entity` and `@Repository` class)
+* changing the fields in one of your `@Entity` classes (i.e. you are adding fields, naming fields, or changing the types of fields in a row in your database)
+
+If your app is not set up with migrations, then you might want to set it up with migrations if:
+* you are finding that the `auto-ddl` mechanism is not sufficient for keeping your database schema in sync with changes you are making to the `@Entity` and `@Repository` classes.  
+* you expect that you are going to make a lot of changes to the database, and you want a history  of those changes
+* you are going to launch a product into production, where relying on the `auto-ddl` mechanism is definitely not recommended.  (It's fine for prototypes and development, but not so much for code you really need to rely on for correctness, stability, etc.)
+
+# How do you make a migration?
+
+The short version is:
+
+* You set up the project for migrations in general, if not already done (see details below)
+* You figure out how to write the change to the database schema using SQL syntax.
+* You put this change into a migration, which goes under `src/main/resources/db/migration/` in a file with a very specific naming convention.
+
+Understanding how to write the SQL is not always straightforward, and you do need to comply with the naming conventions.  But other than that, it really is a quite straightforward process: write the SQL in the correct file, and everything else just happens automatically.   
+
+Note that, at least the way we have things set up for most Spring Boot projects in this course, you don't have to worry about migrations when running on localhost, or when testing, because in those circumstances, we use an H2 in-memory database, and restart the database from scratch each time.
+
 ## Intro to Migrations
 
 When you have a running app in production (say, on Heroku), you may need to make changes to the database as you continue to develop- adding a new table, a new column to an existing table, or changing a table name, for example. Sometimes you can rely on the default auto-ddl tools (which use your code and the framework conventions to determine the SQL commands probably needed to create new tables) incorporated into your framework to take care of that work behind the scenes, but sometimes this might not be sufficient. For example, if you change the name of an entity and expect the name of the corresponding data table to be changed, the auto-ddl tool may simply create an entirely new table. In Spring Boot, if you change the name of a column variable in an entity, the auto-ddl will likely just add a column with the new name and will not remove or replace the column with the old name. Often, there isn't a lot of good documentation on auto-ddl behavior, so it can also be hard to figure out the problem when something does go wrong.
