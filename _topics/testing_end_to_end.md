@@ -47,6 +47,17 @@ Now within test functions such as [runUserFlowEnd2EndTestWithAuthentication()](h
 
 NOTE: It is highly recommended to reset the database between each test suite. This can be done by adding `properties="spring.datasource.name=xyz"` to the `@SpringBootTest` annotation (where `xyz` is a unique string). An example of this can be seen on [line 28](https://github.com/ucsb-cs48-s20/project-idea-reviewer/blob/master/src/test/java/edu/ucsb/cs48/s20/demo/end2end/UserFlowEnd2EndTest.java#L28). The database will be reloaded based on `data.sql`.
 
+### Troubleshooting Errors
+* Field `...` required a bean of type `...` that could not be found
+    * This happens when configuration variables are not set properly when Spring Boot starts. If this error occurs while running the Selenium end to end test, make sure to set the relevant `System.property` in the `static{}` fields (which is equivelant to setting the property in localhost.properties, except that setting `System.property`in `static{}` will only be set for the single test).
+ * Each of my tests pass when ran one at a time (`mvn test -Dtest=CLASSNAME`) but not when I run all of them (`mvn test`)
+    * This is likely due to the fact that some tests are modifying the database and the values are persisting in other test cases where they are assumed to be the default. To fix this, we can create a new isntance of the database for each test class. Add the following class annotation to each test class where the database is being modified so it starts with a unique database instance (where SOMEUNIQUENAME is some unique name):
+    ```java
+    @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, properties="spring.datasource.name=SOMEUNIQUENAME")
+
+    ```
+  
+
 ## End to end testing with NextJS and Cypress
 
 See: <https://ucsb-cs48.github.io/jstopics/testing_cypress/>
