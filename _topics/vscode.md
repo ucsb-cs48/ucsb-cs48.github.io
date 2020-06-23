@@ -16,9 +16,13 @@ You'll likely need to add some "extensions" for the programming languages that y
 
 * Multiline Editing: (copied [from here](https://stackoverflow.com/a/30039968))
    * On Windows, you hold Ctrl+Alt while pressing the up ↑ or down ↓ arrow keys to add cursors. 
-   * On Mac, ⌥ Opt+⌘ Cmd+↑/↓
+   * On macOS, ⌥ Opt+⌘ Cmd+↑/↓
    * On Linux, Shift+Alt+↑/↓
    
+* Search for File
+  * On Windows Ctrl+p or Ctrl+e
+  * On macOS Cmd ⌘+p
+  * On Linux Ctrl+p or Ctrl+e
    
 # Settings for Java Formatting
 
